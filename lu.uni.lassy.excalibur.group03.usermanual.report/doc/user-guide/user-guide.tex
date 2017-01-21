@@ -102,7 +102,35 @@ different stages of the process while its is performed by the actor(s).
 \section{Mono-procedures}
 Mono-procedures must be grouped by actors.
 
+%==========================ComCompany======================
+\subsection{ComCompany}
 
+\vspace{0.5cm}
+\subsection{PI}
+
+\hrule
+\textbf{Procedure:} ConsultOfPI \\
+\textbf{Scope:} Crisis Management System (CMS) \\
+\textbf{Primary Actor:} ComCompany Vodafone, Vict im Diana \\
+\textbf{Secondary Actor(s):} CMS \\
+\textbf{Goal:} Consult ComCompany a list of PI classified by categories. \\
+\textbf{Level:} User-goal level \\
+\textbf{Main success Scenario:} 
+\begin{enumerate}
+	\item CMS sends to victim Diana SMS with list of PI classified by categories
+	via ComCompany Vodafone
+	\item Victim Diana selects from list of options which are presented in SMS and
+	send his choice in response message via ComCompany Vodafone
+	\item CMS sends SMS with requested information (including a map and the route)
+	via ComCompany Vodafone
+	\item Victim Diana took all the necessary information or she sends another SMS
+	with a new choice(procedure starts from 2 point) Extension:
+\end{enumerate}	
+\textbf{Extension:} \\ 
+\textbf{2.1} In case Victim sends empty message or with options that is
+not provided in list of options – Victim receive message with text “Incorrect data. Please retry …(Here content of a previous message with list of options) … “
+\hrule
+\vspace{0.5cm}
 %==========================Administrator======================
 \subsection{Administrator}
 

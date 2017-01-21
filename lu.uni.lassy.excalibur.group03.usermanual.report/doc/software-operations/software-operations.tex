@@ -121,3 +121,28 @@ access the Coordinator Control Panel.
 \end{enumerate}
  
 \end{description}
+
+%==========================CoordinatorLogin==================================
+\section{ConsultOfPI}
+\label{operation:ConsultOfPI}
+ComCompany provides all necesary information about the victim then system sends
+SMS message to the Victim with all necessary infromation. 
+\begin{description}
+
+\item \textbf{Parameters:} Victim phone number, Victim location information.
+\item \textbf{Precondition:} Victim selected option from list in SMS.
+\item \textbf{Post-condition:} Victim received SMS message with data he or she
+requested according Victim location information.
+\item \textbf{Output messages:} comes right after Victim response via SMS
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item CMS informs us about alert with new Victim and Coordinator verified this
+alert as valid (really happened)
+\item Victim was mistaken while sending message with incorrect data or message was empty
+\item Victim makes some choice and sends correct request
+\end{enumerate}
+ 
+\end{description}
+
+
