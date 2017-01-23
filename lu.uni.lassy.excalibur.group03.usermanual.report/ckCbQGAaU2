@@ -1,2 +1,0 @@
-(require "c:/texlive/2016/texmf-dist/xindy/modules/lang/english/utf8-lang.xdy")
-(require "./user-manual.xdy")
