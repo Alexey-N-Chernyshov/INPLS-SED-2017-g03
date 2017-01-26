@@ -63,7 +63,9 @@ database.
 \begin{enumerate}
 \item Login as Administrator.
 \item From Administrator Control Panel press button Add a coordinator.
-\item From Administrator Control Panel fill out the required entries related to the personal information of the Coordinator such as User ID, User name, Password and phone number.
+\item From Administrator Control Panel fill out the required entries related to
+the personal information of the Coordinator such as user ID, user name,
+password, phone number and domains of expertise.
 \item Click on the button Create to add the entry to the database.
 \end{enumerate}
  
@@ -145,4 +147,98 @@ alert as valid (really happened)
  
 \end{description}
 
+%===============================CreateAlert=====================================
+\section{CreateAlert}
+\label{operation:CreateAlert}
+Creates an instance of alert and crisis based on the SMS received from a human
+and information related him/her.
 
+\begin{description}
+
+\item \textbf{Parameters:} SMS message content, SMS sender's phone number, SMS
+receive time, SMS sender's location, SMS sender's role in crisis.
+\item \textbf{Precondition:} Communication company exists and SMS message is
+received by it.
+\item \textbf{Post-condition:} Alert is created and crisis is created.
+\item \textbf{Output messages:} Crisis approving SMS message is sent to an SMS
+sender.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item From within the communication company management window fill out the
+required entries related to the alert/crisis time, SMS sender's location, phone number, comment.
+\item Fill out the crisis' attributes.
+\item Click on the ''Send alert'' button in and add the two entries to the
+database.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================GetAlerts=====================================
+\section{GetAlerts}
+\label{operation:GetAlerts}
+At the moment of loading the system gets the list of alerts depending on
+coordinator's domains of expertise.
+
+\begin{description}
+
+\item \textbf{Parameters:} Required alert's statuses, coordinator's domains of
+expertise.
+\item \textbf{Precondition:} Coordinator is logged in.
+\item \textbf{Post-condition:} List of alerts contains all the existing alerts
+except those that doesn't correspond to domains of expertise of the coordinator.
+\item \textbf{Output messages:} ---
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Coordinator logs in or coordinators switches to ''Alerts'' tab or
+coordinator switches required alert status.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================GetCrises=====================================
+\section{GetCrises}
+\label{operation:GetCrises}
+At the moment of loading the system gets the list of crises depending on
+coordinator’s domains of expertise.
+
+\begin{description}
+
+\item \textbf{Parameters:} Required crisis’s statuses, coordinator’s domains of
+expertise.
+\item \textbf{Precondition:} Coordinator is logged in.
+\item \textbf{Post-condition:} List of crises contains all the existing alerts
+except those that doesn’t correspond to domains of expertise of the coordinator.
+
+\item \textbf{Output messages:} ---
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Coordinator logs in or coordinators switches to ''Crises'' tab or
+coordinator switches required crisis status.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================InitSystem=====================================
+\section{GetCrises}
+\label{operation:GetCrises}
+System initializes database at the first time of system launch.
+
+\begin{description}
+
+\item \textbf{Parameters:} Initialization script file name.
+\item \textbf{Precondition:} Database is not initialized.
+\item \textbf{Post-condition:} All database tables are created and attributes,
+domains of expertise and correlation of domains of expertise and attributes
+tables are filled in.
+
+\item \textbf{Output messages:} Database is initialized.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item The server application is launched first time.
+\end{enumerate}
+ 
+\end{description}
