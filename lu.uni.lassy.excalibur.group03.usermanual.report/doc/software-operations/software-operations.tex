@@ -48,83 +48,65 @@ It might be required to include GUI screenshots to illustrate the example.
 \section{RegistrationOfCoordinator}
 \label{operation:RegistrationOfCoordinator}
 The system Administrator adds a new Coordinator to the system. The administrator 
-provides Coordinator's User ID, User name, Password and a phone number.
+provides Coordinator's user id, user name, password, phone number, selects
+domain of expertise.
 
 \begin{description}
 
-\item \textbf{Parameters:} Coordinator User ID, Coordinator User name,
-Coordinator Password, Coordinator phone number.
-\item \textbf{Precondition:} The system administrator is logged in.
+\item \textbf{Parameters:} Coordinator user id, Coordinator user name,
+Coordinator password, Coordinator phone number, Coordinator domain of expertise.
+\item \textbf{Precondition:} The system Administrator is logged in and
+Coordinaotr user id is not empty and Coordinator user name is not empty and
+Coordinator phone number is not empty and Coordinator domain of expertise is
+set.
 \item \textbf{Post-condition:} A new Coordinator has been added to the system
 database.
-\item \textbf{Output messages:} The coordinator was added to the system.
+\item \textbf{Output messages:} The Administrator is notified that Coordinator
+has been added to the system.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
 \item Login as Administrator.
-\item From Administrator Control Panel press button Add a coordinator.
+\item From Administrator Control Panel press button ``Add a coordinator''.
 \item From Administrator Control Panel fill out the required entries related to
-the personal information of the Coordinator such as user ID, user name,
+the personal information of the Coordinator such as user id, user name,
 password, phone number and domains of expertise.
-\item Click on the button Create to add the entry to the database.
+\item Click on the button ``Create'' to add the entry to the database.
 \end{enumerate}
  
 \end{description}
 
 
 %==========================AdministratorLogin==================================
-\section{AdministratorLogin}
-\label{operation:AdministratorLogin}
-Administrator provides username and password to login into the system. 
-Then system sends temporary confirmation code via SMS. 
-Administrator fill out the code and gets access to the Administrator Control Panel.
+\section{UserLogin}
+\label{operation:UserLogin}
+An Administrator or Coordinator is called further User. User enters username and
+password to login into the system. Then system sends temporary confirmation code
+via SMS. User fill out the code and gets access to the Control Panel.
 
 \begin{description}
 
-\item \textbf{Parameters:} Administrator User ID, Administrator password,
-Administrator phone number.
-\item \textbf{Precondition:} The system administrator is not logged in.
-\item \textbf{Post-condition:} The administrator gets access to the
-Administrator Control Panel.
-\item \textbf{Output messages:} The administrator is logged in.
+\item \textbf{Parameters:} User id, password, phone number
+\item \textbf{Precondition:} The User is not logged in
+\item \textbf{Post-condition:} The user gets access to the Control Panel, and
+username is equal to the one in database, and password is equal to the one in
+database and confirmation code is equal to generated one.
+\item \textbf{Output messages:} The User is notified that he is logged in.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item From Administrator Control Panel Login Window fill out the required entries as Username and Password and push on the button Continue.
-\item Wait for SMS on the provided phone number with temporary confirmation code.
-\item Fill out the entry confirmation code and press on the button Login to
-access the Administrator Control Panel.
+\item From Control Panel Login Window fill out the required entries as
+``username'' and ``password'' and push on the button ``Continue''.
+\item Wait for SMS on the phone number had provided with temporary confirmation
+code.
+\item Fill out the entry ``confirmation code'' and press on the button ``Logon''
+to access the Control Panel.
 \end{enumerate}
  
 \end{description}
 
 
-%==========================CoordinatorLogin==================================
-\section{CoordinatorLogin}
-\label{operation:CoordinatorLogin}
-Coordinator provides username and password to login into the system. 
-Then system sends temporary confirmation code via SMS. 
-Coordinator fill out the code and gets access to the Coordinator Control Panel.
-\begin{description}
-
-\item \textbf{Parameters:} Coordinator User ID, Coordinator password,
-Coordinator phone number.
-\item \textbf{Precondition:} The Coordinator is not logged in.
-\item \textbf{Post-condition:} The Coordinator gets access to the
-Coordinator Control Panel.
-\item \textbf{Output messages:} The Coordinator is logged in.
-
-\item \textbf{Triggering:}
-\begin{enumerate}
-\item From Coordinator Control Panel Login Window fill out the required entries as Username and Password and push on the button Continue.
-\item Wait for SMS on the provided phone number with temporary confirmation code.
-\item Fill out the entry confirmation code and press on the button Login to
-access the Coordinator Control Panel.
-\end{enumerate}
- 
-\end{description}
-
-%==========================CoordinatorLogin==================================
+%==========================ConsultOfPI==================================
 \section{ConsultOfPI}
 \label{operation:ConsultOfPI}
 ComCompany provides all necesary information about the victim then system sends
