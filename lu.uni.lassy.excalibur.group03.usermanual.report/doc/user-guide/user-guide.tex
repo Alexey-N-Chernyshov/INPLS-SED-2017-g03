@@ -77,40 +77,45 @@ different stages of the process while its is performed by the actor(s).
 
 \section{Multi-procedures}
 
-\subsection{DoAlert}
+\subsection{CreateAlert}
 \vspace{0.5cm}
 \hrule
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] DoAlert
+\item [\textbf{Procedure:}] CreateAlert
 \item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
 \item [\textbf{Primary Actor}:] Communication Company Vodafone
-\item [\textbf{Secondary Actor(s)}:] Witness Gerald, Coordinator Natalie, Coordinator Bob
-\item [\textbf{Goal:}] To inform ABC company about Gerald's crisis
+\item [\textbf{Secondary Actor(s)}:] Coordinator Natalie, Coordinator Bob
+\item [\textbf{Goal:}] To inform coordinators of ABC company about crisis
 \item [\textbf{Level}:] User-goal level
 
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Gerald} uses his cell phone to send SMS message ``I see the car crash
-with fire'' to Vodafone communication company\\
-2. \emph{Vodafone} sees Communication Company Control Panel\\
-3. \emph{Vodafone} sets type of a person as witness, enters Gerald's phone
-number, date and time, latitude, longitude and comment ``very important
-accident''\\
-4. \emph{Vodafone} chooses attribute ``fire''\\
-5. \emph{Gerald's} receives SMS message ``Your alert has been registered. We
-will handle it and keep you informed.''\\
-6. Alert and corresponding crisis are shown in \emph{Natalie's} control panel,
-but not shown in \emph{Bob’s} coordinator panel (because \emph{Bob} is not an
-expert in required domain).
+1. \emph{Vodafone} communication company recieves SMS message: ``I see the car crash
+with fire'' from phone number 666666\\
+2. \emph{Vodafone} sets type of a person as witness, enters phone
+number --- 666666, date --- 24/01/2017, time --- 12:37:00, latitude
+\hspace*{0.4cm} --- 55.753435, longitude --- 48.741782, comment --- ``car crash
+with fire'' and selects attribute ``fire'' (Figure~\ref{fig:CommunicationCompanyControlPanel})\\
+3. \emph{Vodafone} confirms alert creation\\
+4. \emph{Vodafone} sends SMS message ``Your alert has been registered.
+We will handle it and keep you informed.'' to phone number \hspace*{0.4cm}
+666666\\
+5. Alert and corresponding crisis are shown in \emph{Natalie's} control panel,
+but not shown in \emph{Bob’s} coordinator panel (because
+\hspace*{0.4cm} \emph{Bob} is not an expert in required domain).
 
 \item [\textbf{Extensions}]:\\
-3.a Fields was not filled out\\
-\hspace*{0.5cm} 3.a.1 \emph{CMS} shows the warning Incorrect data\\
-\hspace*{0.5cm} \textbf{procedure continues at step 3}\\
-4.a No attribute is chosen\\
-\hspace*{0.5cm} 3.a.1 \emph{CMS}shows the warning Incorrect data 
-(at least one attribute should be chosen)\\
-\hspace*{0.5cm} \textbf{procedure continues at step 4}
+3.a Fields have not been filled out\\
+	\hspace*{0.5cm} 3.a.1 \emph{CMS} shows the warning Incorrect data\\
+	\hspace*{0.5cm} \textbf{procedure continues at step 2}\\
+3.b No attribute is chosen\\
+	\hspace*{0.5cm} 3.b.1 \emph{CMS}shows the warning Incorrect data 
+	(at least one attribute should be chosen)\\
+	\hspace*{0.5cm} \textbf{procedure continues at step 4}\\
+5.a Only alert has been created (crisis around 100 meters SMS sender's location
+is not closed)\\
+	\hspace*{0.5cm} 5.a.1 \emph{Natalie} can see in her Coordinator Control Panel
+	only new alert (but no new crises)\\
 }
 \end{lyxlist}
 \hrule

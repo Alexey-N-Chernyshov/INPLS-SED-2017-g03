@@ -151,25 +151,26 @@ alert as valid (really happened)
 \section{CreateAlert}
 \label{operation:CreateAlert}
 Creates an instance of alert and crisis based on the SMS received from a human
-and information related him/her.
+(witness, victim, anonym), SMS sender's phone number, latitude and longitude of
+SMS sender and SMS arrival time.
 
 \begin{description}
 
 \item \textbf{Parameters:} SMS message content, SMS sender's phone number, SMS
-receive time, SMS sender's location, SMS sender's role in crisis.
-\item \textbf{Precondition:} Communication company exists and SMS message is
-received by it.
-\item \textbf{Post-condition:} Alert is created and crisis is created.
+receive time, SMS sender's location, SMS sender's role in crisis (witness,
+victim, anonym).
+\item \textbf{Precondition:} SMS message is received.
+\item \textbf{Post-condition:} Alert is created and crisis is created if there
+are no crises around 100 meters.
 \item \textbf{Output messages:} Crisis approving SMS message is sent to an SMS
-sender.
+sender via Communication Company.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
 \item From within the communication company management window fill out the
-required entries related to the alert/crisis time, SMS sender's location, phone number, comment.
-\item Fill out the crisis' attributes.
-\item Click on the ''Send alert'' button in and add the two entries to the
-database.
+required entries related to the alert/crisis time, SMS sender's location, phone
+number, comment and crisis attributes.
+\item Click on ``Send alert'' button.
 \end{enumerate}
  
 \end{description}
@@ -177,13 +178,12 @@ database.
 %=================================GetAlerts=====================================
 \section{GetAlerts}
 \label{operation:GetAlerts}
-At the moment of loading the system gets the list of alerts depending on
-coordinator's domains of expertise.
+ Gets the list of alerts depending on coordinator's domains of expertise at the
+ moment of loading the system.
 
 \begin{description}
 
-\item \textbf{Parameters:} Required alert's statuses, coordinator's domains of
-expertise.
+\item \textbf{Parameters:} Alert statuses, coordinator's domains of expertise.
 \item \textbf{Precondition:} Coordinator is logged in.
 \item \textbf{Post-condition:} List of alerts contains all the existing alerts
 except those that doesn't correspond to domains of expertise of the coordinator.
@@ -191,7 +191,7 @@ except those that doesn't correspond to domains of expertise of the coordinator.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item Coordinator logs in or coordinators switches to ''Alerts'' tab or
+\item Coordinator logs in or coordinators switches to ``Alerts'' tab or
 coordinator switches required alert status.
 \end{enumerate}
  
@@ -200,12 +200,12 @@ coordinator switches required alert status.
 %=================================GetCrises=====================================
 \section{GetCrises}
 \label{operation:GetCrises}
-At the moment of loading the system gets the list of crises depending on
-coordinator’s domains of expertise.
+Gets the list of crises depending on coordinator’s domains of expertise at the
+moment of loading the system.
 
 \begin{description}
 
-\item \textbf{Parameters:} Required crisis’s statuses, coordinator’s domains of
+\item \textbf{Parameters:} Crisis status, coordinator’s domains of
 expertise.
 \item \textbf{Precondition:} Coordinator is logged in.
 \item \textbf{Post-condition:} List of crises contains all the existing alerts
@@ -215,20 +215,20 @@ except those that doesn’t correspond to domains of expertise of the coordinato
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item Coordinator logs in or coordinators switches to ''Crises'' tab or
+\item Coordinator logs in or coordinators switches to ``Crises'' tab or
 coordinator switches required crisis status.
 \end{enumerate}
  
 \end{description}
 
-%=================================InitSystem=====================================
-\section{GetCrises}
-\label{operation:GetCrises}
+%=================================InitializeDatabase=====================================
+\section{InitializeDatabase}
+\label{operation:InitializeDatabase}
 System initializes database at the first time of system launch.
 
 \begin{description}
 
-\item \textbf{Parameters:} Initialization script file name.
+\item \textbf{Parameters:} ---
 \item \textbf{Precondition:} Database is not initialized.
 \item \textbf{Post-condition:} All database tables are created and attributes,
 domains of expertise and correlation of domains of expertise and attributes
@@ -238,7 +238,7 @@ tables are filled in.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item The server application is launched first time.
+\item The server application is launched the first time.
 \end{enumerate}
  
 \end{description}
