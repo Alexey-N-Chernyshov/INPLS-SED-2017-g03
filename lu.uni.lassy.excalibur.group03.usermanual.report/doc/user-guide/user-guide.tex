@@ -105,6 +105,7 @@ but not shown in \emph{Bob’s} coordinator panel (because
 \hspace*{0.4cm} \emph{Bob} is not an expert in required domain).
 
 \item [\textbf{Extensions}]:\\
+<<<<<<< Upstream, based on origin/master
 3.a Fields have not been filled out\\
 	\hspace*{0.5cm} 3.a.1 \emph{CMS} shows the warning Incorrect data\\
 	\hspace*{0.5cm} \textbf{procedure continues at step 2}\\
@@ -116,6 +117,15 @@ but not shown in \emph{Bob’s} coordinator panel (because
 is not closed)\\
 	\hspace*{0.5cm} 5.a.1 \emph{Natalie} can see in her Coordinator Control Panel
 	only new alert (but no new crises)\\
+=======
+3.a Fields was not filled out\\
+\hspace*{0.5cm} 3.a.1 \emph{CMS} shows the warning Incorrect data\\
+\hspace*{0.5cm} \textbf{procedure continues at step 3}\\
+4.a No attribute is chosen\\
+\hspace*{0.5cm} 3.a.1 \emph{CMS} shows the warning Incorrect data 
+(at least one attribute should be chosen)\\
+\hspace*{0.5cm} \textbf{procedure continues at step 4}
+>>>>>>> f4cc60c point of interest feature reviewed
 }
 \end{lyxlist}
 \hrule
@@ -128,32 +138,40 @@ Mono-procedures must be grouped by actors.
 %==========================ComCompany======================
 \subsection{ComCompany}
 
+\subsubsection{ConsultVictim}
+
 \vspace{0.5cm}
-%\section{PI}
-\subsubsection{ConsultOfPI}
-\textbf{Procedure:} ConsultOfPI \\
-\textbf{Scope:} Crisis Management System (CMS) \\
-\textbf{Primary Actor:} ComCompany Vodafone, Victim Diana \\
-\textbf{Secondary Actor(s):} CMS \\
-\textbf{Goal:} Consult ComCompany a list of PI classified by categories. \\
-\textbf{Level:} User-goal level \\
-\textbf{Main success Scenario:} 
-\begin{enumerate}
-	\item CMS sends to victim Diana SMS with list of PI classified by categories
-	via ComCompany Vodafone see the example ~\ref{fig:Selectcategory} on
-	page~\pageref{fig:Selectcategory}\\
-	\item Victim Diana selects from list of options which are presented in SMS and
-	send his choice in response message via ComCompany Vodafone example on
-	~\ref{fig:Victimchoice} on page~\pageref{fig:Victimchoice}\\
-	\item CMS sends SMS with requested information (including a map and the route)
-	via ComCompany Vodafone like in example ~\ref{fig:Answeronselection} on
-	page~\pageref{fig:Answeronselection}\\
-	\item Victim Diana took all the necessary information or she sends another SMS
-	with a new choice(procedure starts from 2 point) Extension:
-\end{enumerate}	
-\textbf{Extension:} \\ 
-\textbf{2.1} In case Victim sends empty message or with options that is
-not provided in list of options � Victim receive message with text �Incorrect data. Please retry �(Here content of a previous message with list of options) � �
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] ConsultVictim
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor:}] ComCompany Vodafone
+\item [\textbf{Secondary Actor(s):}] CMS
+\item [\textbf{Goal:}] Consult Victim with the list of Point of Interest
+classified by categories
+\item [\textbf{Level:}] User-goal level 
+
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{CMS} sends to Victim SMS with list of PI classified by categories via
+\emph{ComCompany Vodafone} according to the user location(Point of Interest in radius 10km) see the example ~\ref{fig:Selectcategory} on page~\pageref{fig:Selectcategory}\\
+2. Victim replies on message from previous step with its selection via
+ComCompany Vodafone example on ~\ref{fig:Victimchoice} on page~\pageref{fig:Victimchoice}\\
+3. \emph{CMS} via \emph{ComCompany Vodafone} sends requested information from
+previous step(including a link on a map and the route) like in example ~\ref{fig:Answeronselection} on page~\pageref{fig:Answeronselection}\\
+4. Victim took all the necessary information, system is notified by ComCompany 
+that message from previous point is delivered\\
+
+\item [\textbf{Extension}]:\\ 
+2.a In case Victim sends empty message or with category and option that is not
+provided in list of options Victim receive SMS ``Your input is incorrect. Please
+retry again''\\
+4.a Also Victim could make another request in that case he is starting from 2-nd
+point\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
 
 %==========================Administrator======================
 \subsection{Administrator}

@@ -106,7 +106,32 @@ to access the Control Panel.
 \end{description}
 
 
-%==========================ConsultOfPI==================================
+%==========================CoordinatorLogin==================================
+\section{CoordinatorLogin}
+\label{operation:CoordinatorLogin}
+Coordinator provides username and password to login into the system. 
+Then system sends temporary confirmation code via SMS. 
+Coordinator fill out the code and gets access to the Coordinator Control Panel.
+\begin{description}
+
+\item \textbf{Parameters:} Coordinator User ID, Coordinator password,
+Coordinator phone number.
+\item \textbf{Precondition:} The Coordinator is not logged in.
+\item \textbf{Post-condition:} The Coordinator gets access to the
+Coordinator Control Panel.
+\item \textbf{Output messages:} The Coordinator is logged in.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item From Coordinator Control Panel Login Window fill out the required entries as Username and Password and push on the button Continue.
+\item Wait for SMS on the provided phone number with temporary confirmation code.
+\item Fill out the entry confirmation code and press on the button Login to
+access the Coordinator Control Panel.
+\end{enumerate}
+ 
+\end{description}
+
+%==========================CoordinatorLogin==================================
 \section{ConsultOfPI}
 \label{operation:ConsultOfPI}
 ComCompany provides all necesary information about the victim then system sends
