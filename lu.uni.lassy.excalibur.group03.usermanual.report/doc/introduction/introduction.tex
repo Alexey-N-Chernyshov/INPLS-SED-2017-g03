@@ -81,28 +81,124 @@ CMS iCrash.
 
 
 \section{\mysystemname}
-iCrash is a system dedicated to inform about car crash and help with crisis
-handling.
-
+iCrash system is dedicated to inform about a car crash and help with crisis
+handling. The purpose of this application is to take control over emergency
+situations, optimize the process of their resolving, to provide mechanism of
+centralized information gathering from any person involved in car crash crisis
+and to guide victims during crisis handling.
 
 \subsection{Actors \& Functionalities}
-Overview of all the \textbf{\emph{\glspl{actor}}} interacting with the software
-being them either humans (called end-users in the standard
-\cite{IEEE-2001-userdocumentation}) or not. For each actor, describe the main
-software functions that are offered to him. Structure of this sub-section MUST
-be by actor/functionalities.
 
+\subsubsection{Activator}
+Represents a logical actor for time automatic message sending based on system’s
+or environment status.\\
+Functionalities:
+\begin{itemize}
+  \item Communication of the current time to the system
+  \item Notification of the administrator that some crisis are still pending for
+  a too long time
+\end{itemize}
+
+\subsubsection{Administrator}
+Represents an actor responsible of administration tasks for the iCrash system.\\
+Functionalities:
+\begin{itemize}
+  \item Adding coordinator actors to the system and its environment
+  \item Deleting coordinator actors from the system and its environment
+\end{itemize}
+
+\subsubsection{Communication Company}
+Represents the communication company stakeholder ensuring the input/ouput of
+textual messages with humans having communication devices.\\
+Functionalities:
+\begin{itemize}
+  \item Delivery of any SMS sent by any human to the iCrash's phone number
+  \item Transmission of SMS messages from the ABC company that owns the iCrash
+  system to any human having an SMS compatible device accessible using a phone
+  number
+\end{itemize}
+
+\subsubsection{Coordinator}
+Represents actor responsible of handling one or several crisis for the iCrash
+system.\\
+Functionalities:
+\begin{itemize}
+  \item Securely monitoring the existing alerts and crisis
+  \item Securely managing alerts and crisis until their termination
+\end{itemize}
+
+\subsubsection{Messir Creator}
+Represents the creator stakeholder in charge of state and environment
+initialization.\\
+Functionalities:
+\begin{itemize}
+  \item Installation of the iCrash System
+  \item Definition of the values for the initial system’s state
+  \item Definition of the values for the initial system’s environment
+  \item Ensurance of  the integration of the iCrash system with its initial
+  environment
+\end{itemize}
 
 \subsection{Operating environment}
-Brief overview of the infrastructure on which the software is deployed and used.
+The iCrash system is deployed across three different parts:\\
+The first part is database. Database stores all the data related to crises,
+alerts, system users and phone numbers of people who sent SMS message to ABC
+company.\\
+The second part is the server application. Server part runs the application
+business logic. On one side it manipulates with the database, on the other side
+clients communicate with the server in order to satisfy their objectives.\\
+The third part is client side application. Client side presents only graphical
+user interface for all system’s users. By manipulating with this interface users
+of the system interact with the server side of the application.
 
-\section{Document structure}  
-Information on how this document is organised and it is expected to be
-used. Recommendations on which members of the audience
-should consult which sections of the document, and explanations about the used
-notation (i.e. description of formats and conventions) must also be provided.
+\section{Document structure}
+Information on how this document is organised and it is expected to be used.
+Recommendations on which members of the audience should consult which sections
+of the document, and explanations about the used notation (i.e. description of
+formats and conventions) must also be provided.\\
+This document is organized in 5 chapters.\\
+The first chapter presents general information about iCrash system such as
+system requirements, supported operating system, copyrights, trademark notices,
+etc.\\
+The second chapter contains introductory information about the system and
+content of the user manual.\\
+The third chapter is intended to describe user-level features of the system and
+the way users interact during execution of these features. It should be used by
+the users of the system in order to understand how the features of the system
+work when the system is normally running. The format of these feature
+descriptions is the following:
+\begin{itemize}
+  \item \textbf{Procedure} --- the name of a feature
+  \item \textbf{Scope} --- environment of execution
+  \item \textbf{Primary actor} --- an actor of the system, who initiates the
+  feature
+  \item \textbf{Secondary actor(s)} --- other actors who participate in feature
+  execution
+  \item \textbf{Goal} --- the goal which the primary actor pursues
+  \item \textbf{Level} --- the level of description detalization of the feature
+  \item \textbf{Main success scenario} --- the sequence of actions between an
+  actor and the system
+  \item \textbf{Extension} --- other alternative sequence(s) of steps during
+  feature execution
+\end{itemize}
 
+The fourth chapter shows actual operations performed by the system, their
+constraints, output messages and what causes these operations to execute. It can
+be used to understand what happens to the system during interaction with it. The
+format of operation descriptions is the following:
+\begin{itemize}
+  \item \textbf{Parameters} --- the input data which are used to perform an
+  operation
+  \item \textbf{Precondition} --- the logical condition which should be true in
+  order to the operation to be performed
+  \item \textbf{Post-condition} --- the logical condition which should always be
+  true after the operation is performed
+  \item \textbf{Output messages} --- the output information during execution
+  during execution of an operation
+  \item \textbf{Triggering} --- the sequence of steps which triggers system
+  operation execution
+\end{itemize}
 
-
-
-
+The fifth chapter chapter describes the  errors which might happen during system
+operation: the indications of an error, information about the reason that caused
+an error and what should be done to resolve it.
