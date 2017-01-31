@@ -56,8 +56,8 @@ domain of expertise.
 \item \textbf{Parameters:} Coordinator user id, Coordinator user name,
 Coordinator password, Coordinator phone number, Coordinator domain of expertise.
 \item \textbf{Precondition:} The system Administrator is logged in and
-Coordinaotr user id is not empty and Coordinator user name is not empty and
-Coordinator phone number is not empty and Coordinator domain of expertise is
+Coordinaotr user id is not empty and user id is unique in the system database
+and Coordinator user name is not empty and Coordinator phone number is not empty and Coordinator domain of expertise is
 set.
 \item \textbf{Post-condition:} A new Coordinator has been added to the system
 database.
@@ -72,6 +72,33 @@ has been added to the system.
 the personal information of the Coordinator such as user id, user name,
 password, phone number and domains of expertise.
 \item Click on the button ``Create'' to add the entry to the database.
+\end{enumerate}
+ 
+\end{description}
+
+
+%==========================DeleteCoordinator==================================
+\section{DeletionOfCoordinator}
+\label{operation:DeletionOfCoordinator}
+The system Administrator deletes a Coordinator from the system by the Coordinator's user id.
+
+\begin{description}
+
+\item \textbf{Parameters:} Coordinator user id.
+\item \textbf{Precondition:} The system Administrator is logged in and
+Coordinaotr user id is not empty and the entry with Coordinator user id exists
+in the system database.
+\item \textbf{Post-condition:} A Coordinator with defined user id is not in the
+system database.
+\item \textbf{Output messages:} The Administrator is notified that Coordinator
+has been deleted from the system.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Login as Administrator.
+\item From Administrator Control Panel press button ``Delete a coordinator''.
+\item From Administrator Control Panel fill out the Coordinator's user id.
+\item Click on the button ``Delete'' to delete the entry frome the database.
 \end{enumerate}
  
 \end{description}
