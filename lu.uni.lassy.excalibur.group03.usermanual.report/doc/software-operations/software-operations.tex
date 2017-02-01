@@ -228,6 +228,101 @@ coordinator switches required crisis status.
  
 \end{description}
 
+%=================================ReportOnCrisis===============================
+\section{ReportOnCrisis}
+\label{operation:ReportOnCrisis}
+Changes comment parameter for a crisis.
+
+\begin{description}
+
+\item \textbf{Parameters:} Crisis id, Report message.
+\item \textbf{Precondition:} Crisis with specified crisis id exists and report
+message is not empty.
+\item \textbf{Post-condition:} New crisis comment is the report message.
+
+\item \textbf{Output messages:} The crisis comment has been updated!
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Login as coordinator.
+\item Select a crisis.
+\item Press ``Report of crisis'' button.
+\item Fill the message field.
+\item Press ``Report'' button.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================ValidateAlert===============================
+\section{ValidateAlert}
+\label{operation:ValidateAlert}
+Changes status of an alert to ``valid''.
+
+\begin{description}
+
+\item \textbf{Parameters:} Alert id.
+\item \textbf{Precondition:} Alert with specified alert id exists.
+\item \textbf{Post-condition:} Alert with specified id has status ``valid''.
+
+\item \textbf{Output messages:} The alert is now declared as valid!
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Login as coordinator.
+\item Select an alert.
+\item Press ``Validate'' button.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================InvalidateAlert===============================
+\section{ValidateAlert}
+\label{operation:ValidateAlert}
+Changes status of an alert to ``invalid''.
+
+\begin{description}
+
+\item \textbf{Parameters:} Alert id.
+\item \textbf{Precondition:} Alert with specified alert id exists.
+\item \textbf{Post-condition:} Alert with specified id has status ``invalid''.
+
+\item \textbf{Output messages:} The alert is now declared as invalid!
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Login as coordinator.
+\item Select an alert.
+\item Press ``Invalidate'' button.
+\end{enumerate}
+ 
+\end{description}
+
+%=================================ChangeCrisisStatus===============================
+\section{ChangeCrisisStatus}
+\label{operation:ChangeCrisisStatus}
+Changes status of a crisis.
+
+\begin{description}
+
+\item \textbf{Parameters:} Crisis id, status.
+\item \textbf{Precondition:} Crisis with specified crisis id exists and status
+is either pending, handled, solved, closed.
+\item \textbf{Post-condition:} Crisis with specified id has status as
+the status parameter.
+
+\item \textbf{Output messages:} The crisis status has been updated!
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Login as coordinator.
+\item Select a crisis.
+\item Press ``Change crisis status'' button.
+\item Select status
+\item Press ``Change status'' button
+\end{enumerate}
+ 
+\end{description}
+
 %=================================InitializeDatabase=====================================
 \section{InitializeDatabase}
 \label{operation:InitializeDatabase}

@@ -291,4 +291,135 @@ empty\\
 \hrule
 \vspace{0.5cm}
 
+\subsubsection{ReportOnCrisis}
 
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] ReportOnCrisis
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Coordinator Bill
+\item [\textbf{Secondary Actor(s)}:] ---
+\item [\textbf{Goal:}] To do a report on crisis with id 1 using the \emph{CMS}.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Bill} selects crisis with id 1 from the list of crises\\
+2. \emph{Bill} presses ``Report on crisis'' button\\
+3. \emph{CMS} pops up a window for entering report message\\
+4. \emph{Bill} enters message ``ambulance is on the way''\\
+5. \emph{Bill} presses ``Report'' button\\
+6. \emph{CMS} closes pop up window\\
+7. \emph{CMS} changes comment field of crisis having id 1 to ``ambulance is on
+the way''\\
+
+\item [\textbf{Extensions}]:\\
+1.a Crisis is not selected\\
+\hspace*{0.5cm} 1.a.1 \emph{Bill} presses ``Report on crisis'' button\\
+\hspace*{0.5cm} 1.a.2 \emph{CMS} pops up an error message saying ``Incorrect
+Data. Please select one item and try again''\\
+\hspace*{0.5cm} 1.a.3 \emph{Bill} presses ``OK'' button\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+
+5.a Report is cancelled\\
+\hspace*{0.5cm} 5.a.1 \emph{Bill} presses ``Cancel'' button\\
+\hspace*{0.5cm} 5.a.2 \emph{CMS} closes pop up window\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsubsection{ValidateAlert}
+
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] ValidateAlert
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Coordinator Bill
+\item [\textbf{Secondary Actor(s)}:] ---
+\item [\textbf{Goal:}] Validate alert with id 1 using the \emph{CMS}.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Bill} selects alert with id 1 from the list of alerts\\
+2. \emph{Bill} presses ``Validate'' button\\
+3. \emph{CMS} changes alert status to ``valid''\\
+
+\item [\textbf{Extensions}]:\\
+1.a Alert is not selected\\
+\hspace*{0.5cm} 1.a.1 \emph{Bill} presses ``Validate'' button\\
+\hspace*{0.5cm} 1.a.2 \emph{CMS} pops up an error message saying ``Incorrect
+Data. Please select one item and try again ''\\
+\hspace*{0.5cm} 1.a.3 \emph{Bill} presses ``OK'' button\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsubsection{InvalidateAlert}
+
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] InvalidateAlert
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Coordinator Bill
+\item [\textbf{Secondary Actor(s)}:] ---
+\item [\textbf{Goal:}] Invalidate alert with id 1 using the \emph{CMS}.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Bill} selects alert with id 1 from the list of alerts\\
+2. \emph{Bill} presses ``Invalidate'' button\\
+3. \emph{CMS} changes alert status to ``invalid''\\
+
+\item [\textbf{Extensions}]:\\
+1.a Alert is not selected\\
+\hspace*{0.5cm} 1.a.1 \emph{Bill} presses ``Invalidate'' button\\
+\hspace*{0.5cm} 1.a.2 \emph{CMS} pops up an error message saying ``Incorrect
+Data. Please select one item and try again ''\\
+\hspace*{0.5cm} 1.a.3 \emph{Bill} presses ``OK'' button\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+\subsubsection{ChangeCrisisStatus}
+
+\vspace{0.5cm}
+\hrule
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] ChangeCrisisStatus
+\item [\textbf{Scope:}] Crisis Management System (\emph{CMS})
+\item [\textbf{Primary Actor}:] Coordinator Bill
+\item [\textbf{Secondary Actor(s)}:] ---
+\item [\textbf{Goal:}] Change status of crisis with id 1 using the \emph{CMS}.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Bill} selects crisis with id 1 from the list of crises\\
+2. \emph{Bill} presses ``Change crisis status'' button\\
+3. \emph{CMS} pops up a window for changing crisis status\\
+4. \emph{Bill} selects status ``closed''\\
+5. \emph{Bill} presses ``Change status'' button\\
+6. \emph{CMS} closes pop up window\\
+7. \emph{CMS} changes status of crisis having id 1 to ``closed''\\
+
+\item [\textbf{Extensions}]:\\
+1.a Crisis is not selected\\
+\hspace*{0.5cm} 1.a.1 \emph{Bill} presses ``Report on crisis'' button\\
+\hspace*{0.5cm} 1.a.2 \emph{CMS} pops up an error message saying ``Incorrect
+Data. Please select one item and try again ''\\
+\hspace*{0.5cm} 1.a.3 \emph{Bill} presses ``OK'' button\\
+\hspace*{0.5cm} \textbf{procedure continues at step 1}
+
+5.a Operation is cancelled\\
+\hspace*{0.5cm} 5.a.1 \emph{Bill} presses ``Cancel'' button\\
+\hspace*{0.5cm} 5.a.2 \emph{CMS} closes pop up window\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
