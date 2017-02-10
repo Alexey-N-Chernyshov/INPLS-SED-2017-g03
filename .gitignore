@@ -1,7 +1,7 @@
 .DS_Store
-**/makeGlossaries.launch
-**/makeGlossariesBuilderConfiguration.launch
+**/*.launch
 **/.texlipse
+**/.project
 *.pdf
 **/tmp/
 *.aux
