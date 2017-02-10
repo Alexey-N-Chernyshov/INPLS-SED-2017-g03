@@ -1,5 +1,6 @@
 .DS_Store
 **/makeGlossaries.launch
+**/makeGlossariesBuilderConfiguration.launch
 **/.texlipse
 *.pdf
 **/tmp/
