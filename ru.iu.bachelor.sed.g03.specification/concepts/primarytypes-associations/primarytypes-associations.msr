@@ -3,7 +3,7 @@
 * @date Fri Feb 10 14:24:25 MSK 2017
 */
 
-package lu.uni.lassy.excalibur.group03.specification.concepts.primarytypes.associations {
+package ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.associations {
 
 import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
