@@ -2,6 +2,7 @@
 **/*.launch
 **/.texlipse
 **/.project
+lu.uni.lassy.excalibur.standard.report.libraries/*
 *.pdf
 **/tmp/
 *.aux
