@@ -22,3 +22,5 @@ lu.uni.lassy.excalibur.standard.report.libraries/*
 *.mtc0
 *.idx
 *.glsdefs
+*.ilg
+*.ind
