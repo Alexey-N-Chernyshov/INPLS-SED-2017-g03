@@ -118,14 +118,22 @@ access the Coordinator Control Panel.
 %==========================CoordinatorLogin==================================
 \section{ConsultOfPI}
 \label{operation:ConsultOfPI}
-ComCompany provides all necesary information about the victim then system sends
-SMS message to the Victim with all necessary infromation. 
+ComCompany provides to the CMS victim`s coordinates, phone number, text of
+SMS. After that, CMS by using this list of data sends confirmation SMS
+with PI(i.e. medical clinic, police station, fire station) that are in radius of
+10 km to the user coordinates. After receiving SMS with PI, victim
+sends SMS message with selection to the ComCompany. CMS after receiving victim
+selection from previous sentence, sending link to the GoogleMap with selected
+PI on it. 
 \begin{description}
 
-\item \textbf{Parameters:} Victim phone number, Victim location information.
-\item \textbf{Precondition:} Victim selected option from list in SMS.
+\item \textbf{Parameters:} Victim`s phone number, Victim`s location
+information(longitude, latitude of current victim`s position), Victim`s text in
+SMS, list of PI generated for particular victim`s data(location, text).
+\item \textbf{Precondition:} Victim selected category and PI in that category
+from CMS in SMS.
 \item \textbf{Post-condition:} Victim received SMS message with data he or she
-requested according Victim location information.
+requested according Victim location information and text of victim`s SMS.
 \item \textbf{Output messages:} comes right after Victim response via SMS
 
 \item \textbf{Triggering:}
