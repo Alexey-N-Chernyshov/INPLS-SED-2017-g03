@@ -12,8 +12,8 @@ domain of expertise.
 
 \item \textbf{Parameters:} Coordinator user id, Coordinator user name,
 Coordinator password, Coordinator phone number, Coordinator domain of expertise.
-\item \textbf{Precondition:} The system Administrator is logged in and
-Coordinaotr user id is not empty and user id is unique in the system database
+\item \textbf{Precondition:} The current user is system Administrator and system
+Administrator is logged in and Coordinaotr user id is not empty and user id is unique in the system database
 and Coordinator user name is not empty and Coordinator phone number is not empty and Coordinator domain of expertise is
 set.
 \item \textbf{Post-condition:} A new Coordinator has been added to the system
@@ -42,8 +42,8 @@ The system Administrator deletes a Coordinator from the system by the Coordinato
 \begin{description}
 
 \item \textbf{Parameters:} Coordinator user id.
-\item \textbf{Precondition:} The system Administrator is logged in and
-Coordinaotr user id is not empty and the entry with Coordinator user id exists
+\item \textbf{Precondition:} The current user is a system Administrator and
+system Administrator is logged in and Coordinaotr user id is not empty and the entry with Coordinator user id exists
 in the system database.
 \item \textbf{Post-condition:} A Coordinator with defined user id is not in the
 system database.
@@ -71,7 +71,7 @@ via SMS. User fill out the code and gets access to the Control Panel.
 \begin{description}
 
 \item \textbf{Parameters:} User id, password, phone number
-\item \textbf{Precondition:} The User is not logged in
+\item \textbf{Precondition:} The current User is not logged in
 \item \textbf{Post-condition:} The user gets access to the Control Panel, and
 username is equal to the one in database, and password is equal to the one in
 database and confirmation code is equal to generated one.
@@ -100,7 +100,8 @@ Coordinator fill out the code and gets access to the Coordinator Control Panel.
 
 \item \textbf{Parameters:} Coordinator User ID, Coordinator password,
 Coordinator phone number.
-\item \textbf{Precondition:} The Coordinator is not logged in.
+\item \textbf{Precondition:} The current user is Coordinator and Coordinator is
+not logged in.
 \item \textbf{Post-condition:} The Coordinator gets access to the
 Coordinator Control Panel.
 \item \textbf{Output messages:} The Coordinator is logged in.
@@ -158,9 +159,10 @@ SMS sender and SMS arrival time.
 \item \textbf{Parameters:} SMS message content, SMS sender's phone number, SMS
 receive time, SMS sender's location, SMS sender's role in crisis (witness,
 victim, anonym).
-\item \textbf{Precondition:} SMS message is received.
+\item \textbf{Precondition:} SMS message informing about alert is received from
+CommCompany.
 \item \textbf{Post-condition:} Alert is created and crisis is created if there
-are no crises around 100 meters.
+are no crises around 100 meters near coordinates of SMS sender.
 \item \textbf{Output messages:} Crisis approving SMS message is sent to an SMS
 sender via Communication Company.
 
@@ -183,7 +185,8 @@ number, comment and crisis attributes.
 \begin{description}
 
 \item \textbf{Parameters:} Alert statuses, coordinator's domains of expertise.
-\item \textbf{Precondition:} Coordinator is logged in.
+\item \textbf{Precondition:} Current user is Coordinator and is
+logged in.
 \item \textbf{Post-condition:} List of alerts contains all the existing alerts
 except those that doesn't correspond to domains of expertise of the coordinator.
 \item \textbf{Output messages:} ---
@@ -199,16 +202,16 @@ coordinator switches required alert status.
 %=================================GetCrises=====================================
 \section{GetCrises}
 \label{operation:GetCrises}
-Gets the list of crises depending on coordinator’s domains of expertise at the
-moment of loading the system.
+Gets the list of crises depending on coordinator's domains of expertise at the
+moment of loading of the system.
 
 \begin{description}
 
-\item \textbf{Parameters:} Crisis status, coordinator’s domains of
+\item \textbf{Parameters:} Crisis status, coordinator's domains of
 expertise.
-\item \textbf{Precondition:} Coordinator is logged in.
+\item \textbf{Precondition:} Current user is Coordinator and is logged in.
 \item \textbf{Post-condition:} List of crises contains all the existing alerts
-except those that doesn’t correspond to domains of expertise of the coordinator.
+except those that doesn't correspond to domains of expertise of the coordinator.
 
 \item \textbf{Output messages:} ---
 
