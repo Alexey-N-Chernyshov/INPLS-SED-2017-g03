@@ -5,8 +5,8 @@
 \section{RegistrationOfCoordinator}
 \label{operation:RegistrationOfCoordinator}
 The system Administrator adds a new Coordinator to the system. The administrator 
-provides Coordinator's user id, user name, password, phone number, selects
-domain of expertise.
+provides Coordinator's user id, user name, password, phone number, domains of
+expertise.
 
 \begin{description}
 
@@ -159,10 +159,9 @@ SMS sender and SMS arrival time.
 \item \textbf{Parameters:} SMS message content, SMS sender's phone number, SMS
 receive time, SMS sender's location, SMS sender's role in crisis (witness,
 victim, anonym).
-\item \textbf{Precondition:} SMS message informing about alert is received from
-CommCompany.
-\item \textbf{Post-condition:} Alert is created and crisis is created if there
-are no crises around 100 meters near coordinates of SMS sender.
+\item \textbf{Precondition:} Current user is the administrator and logged in.
+\item \textbf{Post-condition:} Alert is created and SMS sender's
+coordinates are not close to any crisis coordiates implies crisis is created.
 \item \textbf{Output messages:} Crisis approving SMS message is sent to an SMS
 sender via Communication Company.
 
@@ -187,8 +186,9 @@ number, comment and crisis attributes.
 \item \textbf{Parameters:} Alert statuses, coordinator's domains of expertise.
 \item \textbf{Precondition:} Current user is Coordinator and is
 logged in.
-\item \textbf{Post-condition:} List of alerts contains all the existing alerts
-except those that doesn't correspond to domains of expertise of the coordinator.
+\item \textbf{Post-condition:} All the alerts which are related to domain of
+expertise equal to the one given in the parameter have been sent to the
+coordinator.
 \item \textbf{Output messages:} ---
 
 \item \textbf{Triggering:}
@@ -209,9 +209,11 @@ moment of loading of the system.
 
 \item \textbf{Parameters:} Crisis status, coordinator's domains of
 expertise.
-\item \textbf{Precondition:} Current user is Coordinator and is logged in.
-\item \textbf{Post-condition:} List of crises contains all the existing alerts
-except those that doesn't correspond to domains of expertise of the coordinator.
+\item \textbf{Precondition:} Current user is Coordinator and logged
+in.
+\item \textbf{Post-condition:} All the crises whose first alert is related to a
+domain of expertise equal to the one given in parameter have been sent to the
+coordinator.
 
 \item \textbf{Output messages:} ---
 
@@ -233,7 +235,8 @@ Changes comment parameter for a crisis.
 \item \textbf{Parameters:} Crisis id, Report message.
 \item \textbf{Precondition:} Crisis with specified crisis id exists and report
 message is not empty.
-\item \textbf{Post-condition:} New crisis comment is the report message.
+\item \textbf{Post-condition:} Report message is equal to report message of
+crisis having id equal to crisis id parameter.
 
 \item \textbf{Output messages:} The crisis comment has been updated!
 
@@ -300,8 +303,7 @@ Changes status of a crisis.
 \begin{description}
 
 \item \textbf{Parameters:} Crisis id, status.
-\item \textbf{Precondition:} Crisis with specified crisis id exists and status
-is either pending, handled, solved, closed.
+\item \textbf{Precondition:} Crisis with specified crisis id exists.
 \item \textbf{Post-condition:} Crisis with specified id has status as
 the status parameter.
 
@@ -329,7 +331,7 @@ System initializes database at the first time of system launch.
 \item \textbf{Precondition:} Database is not initialized.
 \item \textbf{Post-condition:} All database tables are created and attributes,
 domains of expertise and correlation of domains of expertise and attributes
-tables are filled in.
+tables are filled in with default values.
 
 \item \textbf{Output messages:} Database is initialized.
 
