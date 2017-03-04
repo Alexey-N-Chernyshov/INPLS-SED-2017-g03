@@ -14,5 +14,17 @@ import lu.uni.lassy.messir.libraries.string
 
 Environment Model {
 			
-}
+actor actComCompany role rnactComCompany cardinality[0 .. *] {
+			input interface inactComCompany {
+			}
+			output interface outactComCompany {
+			}
+		}
+	abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
+			input interface inactAuthenticated {
+			}
+			output interface outactAuthenticated {
+			}
+		}
+	}
 }
