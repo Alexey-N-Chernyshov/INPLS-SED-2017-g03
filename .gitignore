@@ -12,6 +12,7 @@ lu.uni.lassy.excalibur.standard.specification.libraries
 *.glg
 *.glo
 *.log
+*.lol
 *.lof
 *.out
 *.ps
