@@ -1,7 +1,8 @@
 .DS_Store
 **/*.launch
 **/.texlipse
-lu.uni.lassy.excalibur.standard.report.libraries/*
+lu.uni.lassy.excalibur.standard.report.libraries
+lu.uni.lassy.excalibur.standard.specification.libraries
 *.pdf
 **/tmp/
 *.aux
@@ -11,6 +12,7 @@ lu.uni.lassy.excalibur.standard.report.libraries/*
 *.glg
 *.glo
 *.log
+*.lol
 *.lof
 *.out
 *.ps
@@ -23,3 +25,5 @@ lu.uni.lassy.excalibur.standard.report.libraries/*
 *.glsdefs
 *.ilg
 *.ind
+*.swp
+**/.project
