@@ -1,230 +1,633 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_fBhLYO-DEeanLeVE-90uOw" selectedViews="_fB1UcO-DEeanLeVE-90uOw" version="11.1.0.201608251200">
-  <semanticResources>concepts/primarytypes-associations/primarytypes-associations.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/calendar.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/math.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/primitives.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/string.msr</semanticResources>
-  <semanticResources>concepts/primarytypes-classes/primarytypes-classes.msr</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/primarytypes-datatypes.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-associations/secondarytypes-associations.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-classes/secondarytypes-classes.msr</semanticResources>
-  <semanticResources>environment/environment.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-datatypes/secondarytypes-datatypes.msr</semanticResources>
-  <semanticResources>.views.msr</semanticResources>
-  <semanticResources>tests/tests.msr</semanticResources>
-  <semanticResources>usecases/usecases.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/.views.msr</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-calendar-local-view-01.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-math-local-view-01.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-primitives-local-view-01.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-string-local-view-01.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-fromSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-isNow.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-toSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-fromSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-isNow.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-toSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDay-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDay-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtHour-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtHour-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-acos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-add.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asdtReal.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asptInteger.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-atan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-cos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-frac.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-mod.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-msrabs.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-msrdiv.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-mul.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-opp.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-power.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sqr.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sqrt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sub.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-tan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-toDeg.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-toRad.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-todtString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMinute-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMinute-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMonth-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMonth-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-acos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-add.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asdtInteger.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asptReal.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-atan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-cos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-frac.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrabs.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrdiv.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrround.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-mul.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-opp.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-power.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sqr.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sqrt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sub.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-tan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-toDeg.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-toRad.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-todtString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtSecond-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtSecond-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-dtStringConcat.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-length.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-subdtString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toLower.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toUpper.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toptString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-fromSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-isNow.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-toSecondsQty.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtYear-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtYear-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrand.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrnot.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msror.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrxor.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-acos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-add.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-asin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-asptReal.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-atan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-cos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-frac.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-mod.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-msrabs.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-msrdiv.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-mul.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-opp.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-power.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sqr.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sqrt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sub.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-tan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toDeg.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toRad.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toptString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-acos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-add.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-asin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-asptInteger.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-atan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-cos.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-frac.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrabs.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrdiv.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrround.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-mul.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-opp.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-power.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sin.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sqr.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sqrt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sub.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-tan.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toDeg.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toRad.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toptString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-close.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-eq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-geq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-gt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-is.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-length.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-leq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-lt.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-neq.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-ptStringConcat.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-subptString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-toLower.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-toUpper.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDate.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDateAndTime.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDay.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtHour.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtInteger.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtMinute.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtMonth.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtReal.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtSecond.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtTime.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtYear.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptBoolean.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptInteger.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptReal.msrd</semanticResources>
-  <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fB1UcO-DEeanLeVE-90uOw">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:messir="http://www.uni.lu/lassy/excalibur/dsl/messir/Messir" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_fBhLYO-DEeanLeVE-90uOw" selectedViews="_fB1UcO-DEeanLeVE-90uOw" version="11.1.0.201608251200">
+    <semanticResources>concepts/primarytypes-associations/primarytypes-associations.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/calendar.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/math.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/primitives.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/string.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/primarytypes-classes.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/primarytypes-datatypes.msr</semanticResources>
+    <semanticResources>concepts/secondarytypes-associations/secondarytypes-associations.msr</semanticResources>
+    <semanticResources>concepts/secondarytypes-classes/secondarytypes-classes.msr</semanticResources>
+    <semanticResources>environment/environment.msr</semanticResources>
+    <semanticResources>concepts/secondarytypes-datatypes/secondarytypes-datatypes.msr</semanticResources>
+    <semanticResources>.views.msr</semanticResources>
+    <semanticResources>tests/tests.msr</semanticResources>
+    <semanticResources>usecases/usecases.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/.views.msr</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-calendar-local-view-01.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-math-local-view-01.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-primitives-local-view-01.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/documentation/View-string-local-view-01.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-fromSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-isNow.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDate-toSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-fromSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-isNow.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDateAndTime-toSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDay-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtDay-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtHour-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtHour-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-acos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-add.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asdtReal.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-asptInteger.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-atan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-cos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-frac.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-mod.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-msrabs.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-msrdiv.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-mul.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-opp.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-power.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sqr.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sqrt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-sub.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-tan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-toDeg.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-toRad.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtInteger-todtString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMinute-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMinute-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMonth-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtMonth-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-acos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-add.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asdtInteger.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-asptReal.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-atan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-cos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-frac.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrabs.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrdiv.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-msrround.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-mul.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-opp.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-power.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sqr.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sqrt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-sub.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-tan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-toDeg.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-toRad.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtReal-todtString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtSecond-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtSecond-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-dtStringConcat.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-length.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-subdtString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toLower.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toUpper.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtString-toptString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-fromSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-isNow.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtTime-toSecondsQty.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtYear-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-dtYear-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrand.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrnot.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msror.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-msrxor.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptBoolean-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-acos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-add.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-asin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-asptReal.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-atan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-cos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-frac.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-mod.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-msrabs.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-msrdiv.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-mul.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-opp.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-power.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sqr.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sqrt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-sub.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-tan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toDeg.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toRad.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptInteger-toptString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-acos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-add.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-asin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-asptInteger.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-atan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-cos.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-frac.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrabs.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrdiv.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-msrround.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-mul.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-opp.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-power.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sin.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sqr.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sqrt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-sub.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-tan.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toDeg.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toRad.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptReal-toptString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-close.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-eq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-geq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-gt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-is.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-length.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-leq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-lt.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-neq.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-ptStringConcat.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-subptString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-toLower.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/Operation-ptString-toUpper.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDate.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDateAndTime.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtDay.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtHour.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtInteger.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtMinute.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtMonth.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtReal.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtSecond.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtTime.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Datatype-dtYear.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptBoolean.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptInteger.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptReal.msrd</semanticResources>
+    <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
+    <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
+    <semanticResources>documentation/View-Local%20View%2001.msrd</semanticResources>
+    <semanticResources>documentation/View-kkk.msrd</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_fB1UcO-DEeanLeVE-90uOw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_AmBfYAD0EeeqDdbudsBgHQ" name="ugSecurelyUseSystem" representation="_AmINEAD0EeeqDdbudsBgHQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_JmG-kAGeEee8orftCPkGLw" name="kkk" representation="_JmG-kQGeEee8orftCPkGLw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
+        <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid42e8d8a39d3a40aaa255d25d9c7a9518"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_AmINEAD0EeeqDdbudsBgHQ" name="ugSecurelyUseSystem">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AmINEQD0EeeqDdbudsBgHQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_AmINEgD0EeeqDdbudsBgHQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AmI0IAD0EeeqDdbudsBgHQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_AmI0IQD0EeeqDdbudsBgHQ" type="Sirius" element="_AmINEAD0EeeqDdbudsBgHQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_AmI0IwD0EeeqDdbudsBgHQ" type="2001" element="_AmINEwD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmJbMAD0EeeqDdbudsBgHQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AmJbMQD0EeeqDdbudsBgHQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmO6wAD0EeeqDdbudsBgHQ" type="3005" element="_AmINFAD0EeeqDdbudsBgHQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AmO6wQD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmO6wgD0EeeqDdbudsBgHQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AmI0JAD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmI0JQD0EeeqDdbudsBgHQ" x="4" y="39" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_AmLQYAD0EeeqDdbudsBgHQ" type="2001" element="_AmINFQD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmL3cgD0EeeqDdbudsBgHQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_AmL3cwD0EeeqDdbudsBgHQ" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmQI4AD0EeeqDdbudsBgHQ" type="3005" element="_AmINFgD0EeeqDdbudsBgHQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AmQI4QD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmQI4gD0EeeqDdbudsBgHQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AmL3cAD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmL3cQD0EeeqDdbudsBgHQ" x="18" y="360" width="40" height="70"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_AmNFkAD0EeeqDdbudsBgHQ" type="2002" element="_AmINFwD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmNsoAD0EeeqDdbudsBgHQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_AmNsoQD0EeeqDdbudsBgHQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_AmQI4wD0EeeqDdbudsBgHQ" type="3007" element="_AmINGQD0EeeqDdbudsBgHQ">
+              <children xmi:type="notation:Node" xmi:id="_AmQI5gD0EeeqDdbudsBgHQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AmQI5wD0EeeqDdbudsBgHQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AmTzQgD0EeeqDdbudsBgHQ" type="3016" element="_AmINGgD0EeeqDdbudsBgHQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AmTzQwD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmTzRAD0EeeqDdbudsBgHQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AmQI5AD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmQI5QD0EeeqDdbudsBgHQ" x="301" y="117" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AmQv8AD0EeeqDdbudsBgHQ" type="3007" element="_AmINGwD0EeeqDdbudsBgHQ">
+              <children xmi:type="notation:Node" xmi:id="_AmQv8wD0EeeqDdbudsBgHQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AmQv9AD0EeeqDdbudsBgHQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AmUaUAD0EeeqDdbudsBgHQ" type="3016" element="_AmINHAD0EeeqDdbudsBgHQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AmUaUQD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmUaUgD0EeeqDdbudsBgHQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AmQv8QD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmQv8gD0EeeqDdbudsBgHQ" x="31" y="297" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AmRXAAD0EeeqDdbudsBgHQ" type="3007" element="_AmINHQD0EeeqDdbudsBgHQ">
+              <children xmi:type="notation:Node" xmi:id="_AmSlIAD0EeeqDdbudsBgHQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AmSlIQD0EeeqDdbudsBgHQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AmVBYAD0EeeqDdbudsBgHQ" type="3016" element="_AmINHgD0EeeqDdbudsBgHQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AmVBYQD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmVBYgD0EeeqDdbudsBgHQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AmRXAQD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmRXAgD0EeeqDdbudsBgHQ" x="373" y="333" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AmSlIgD0EeeqDdbudsBgHQ" type="3007" element="_AmINHwD0EeeqDdbudsBgHQ">
+              <children xmi:type="notation:Node" xmi:id="_AmTMMAD0EeeqDdbudsBgHQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AmTMMQD0EeeqDdbudsBgHQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AmVBYwD0EeeqDdbudsBgHQ" type="3016" element="_AmINIAD0EeeqDdbudsBgHQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AmVBZAD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmVBZQD0EeeqDdbudsBgHQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AmSlIwD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmSlJAD0EeeqDdbudsBgHQ" x="625" y="297" width="150" height="50"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AmTMMgD0EeeqDdbudsBgHQ" type="3007" element="_AmINIQD0EeeqDdbudsBgHQ">
+              <children xmi:type="notation:Node" xmi:id="_AmTzQAD0EeeqDdbudsBgHQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AmTzQQD0EeeqDdbudsBgHQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AmVocAD0EeeqDdbudsBgHQ" type="3016" element="_AmINIgD0EeeqDdbudsBgHQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AmVocQD0EeeqDdbudsBgHQ" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmVocgD0EeeqDdbudsBgHQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AmTMMwD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmTMNAD0EeeqDdbudsBgHQ" x="211" y="297" width="150" height="50"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_AmNsogD0EeeqDdbudsBgHQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_AmNsowD0EeeqDdbudsBgHQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AmNFkQD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmNFkgD0EeeqDdbudsBgHQ" x="198" y="39" height="433"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_AmI0IgD0EeeqDdbudsBgHQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_AmVocwD0EeeqDdbudsBgHQ" type="4001" element="_AmINIwD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmQv8AD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmVodwD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmVoeAD0EeeqDdbudsBgHQ" x="9" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmWPgAD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmWPgQD0EeeqDdbudsBgHQ" x="-7" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmWPggD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmWPgwD0EeeqDdbudsBgHQ" x="-7" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmVodAD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmVodQD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmVodgD0EeeqDdbudsBgHQ" points="[-55, 50, 215, -180]$[-195, 179, 75, -51]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmWPhAD0EeeqDdbudsBgHQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmWPhQD0EeeqDdbudsBgHQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmWPhgD0EeeqDdbudsBgHQ" type="4001" element="_AmINJwD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmRXAAD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmWPigD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmWPiwD0EeeqDdbudsBgHQ" x="-15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmWPjAD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmWPjQD0EeeqDdbudsBgHQ" x="9" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmW2kAD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmW2kQD0EeeqDdbudsBgHQ" x="12" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmWPhwD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmWPiAD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmWPiQD0EeeqDdbudsBgHQ" points="[23, 50, -49, -216]$[60, 216, -12, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmW2kgD0EeeqDdbudsBgHQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmW2kwD0EeeqDdbudsBgHQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmW2lAD0EeeqDdbudsBgHQ" type="4001" element="_AmINKwD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmSlIgD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmW2mAD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmW2mQD0EeeqDdbudsBgHQ" x="-7" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmW2mgD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmW2mwD0EeeqDdbudsBgHQ" x="7" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmW2nAD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmW2nQD0EeeqDdbudsBgHQ" x="4" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmW2lQD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmW2lgD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmW2lwD0EeeqDdbudsBgHQ" points="[75, 50, -249, -180]$[269, 180, -55, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmXdoAD0EeeqDdbudsBgHQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmXdoQD0EeeqDdbudsBgHQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmXdogD0EeeqDdbudsBgHQ" type="4001" element="_AmINLwD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmTMMgD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmXdpgD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmXdpwD0EeeqDdbudsBgHQ" x="10" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmXdqAD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmXdqQD0EeeqDdbudsBgHQ" x="-7" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmXdqgD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmXdqwD0EeeqDdbudsBgHQ" x="-9" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmXdowD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmXdpAD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmXdpQD0EeeqDdbudsBgHQ" points="[-16, 50, 74, -180]$[-55, 180, 35, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmYEsAD0EeeqDdbudsBgHQ" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmYEsQD0EeeqDdbudsBgHQ" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmZ54AD0EeeqDdbudsBgHQ" type="4001" element="_AmINMwD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmI0IwD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_Amag8AD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Amag8QD0EeeqDdbudsBgHQ" x="2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmbIAAD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmbIAQD0EeeqDdbudsBgHQ" x="1" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmbvEAD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmbvEQD0EeeqDdbudsBgHQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmZ54QD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmZ54gD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmZ54wD0EeeqDdbudsBgHQ" points="[-75, -15, 480, 98]$[-555, -110, 0, 3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmbvEgD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmbvEwD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmbvFAD0EeeqDdbudsBgHQ" type="4001" element="_AmINNgD0EeeqDdbudsBgHQ" source="_AmQI4wD0EeeqDdbudsBgHQ" target="_AmLQYAD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmcWIAD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmcWIQD0EeeqDdbudsBgHQ" x="9" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmcWIgD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmcWIwD0EeeqDdbudsBgHQ" x="5" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmcWJAD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmcWJQD0EeeqDdbudsBgHQ" x="23" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmbvFQD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmbvFgD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmbvFwD0EeeqDdbudsBgHQ" points="[-46, 25, 495, -183]$[-521, 200, 20, -8]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmcWJgD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmcWJwD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Amc9MAD0EeeqDdbudsBgHQ" type="4001" element="_AmINOQD0EeeqDdbudsBgHQ" source="_AmQv8AD0EeeqDdbudsBgHQ" target="_AmI0IwD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_Amc9NAD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Amc9NQD0EeeqDdbudsBgHQ" x="-4" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Amc9NgD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Amc9NwD0EeeqDdbudsBgHQ" x="6" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Amc9OAD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Amc9OQD0EeeqDdbudsBgHQ" x="8" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Amc9MQD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Amc9MgD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Amc9MwD0EeeqDdbudsBgHQ" points="[-25, -25, 260, 268]$[-285, -292, 0, 1]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Amc9OgD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmdkQAD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AmdkQQD0EeeqDdbudsBgHQ" type="4001" element="_AmINPAD0EeeqDdbudsBgHQ" source="_AmRXAAD0EeeqDdbudsBgHQ" target="_AmI0IwD0EeeqDdbudsBgHQ">
+          <children xmi:type="notation:Node" xmi:id="_AmdkRQD0EeeqDdbudsBgHQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmdkRgD0EeeqDdbudsBgHQ" x="-1" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmdkRwD0EeeqDdbudsBgHQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmdkSAD0EeeqDdbudsBgHQ" x="9" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AmdkSQD0EeeqDdbudsBgHQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AmdkSgD0EeeqDdbudsBgHQ" x="8" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AmdkQgD0EeeqDdbudsBgHQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AmdkQwD0EeeqDdbudsBgHQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AmdkRAD0EeeqDdbudsBgHQ" points="[-49, -25, 578, 304]$[-627, -321, 0, 8]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmdkSwD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AmdkTAD0EeeqDdbudsBgHQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINEwD0EeeqDdbudsBgHQ" name="&lt;&lt;abstract>>&#xA;actAuthenticated" incomingEdges="_AmINMwD0EeeqDdbudsBgHQ _AmINOQD0EeeqDdbudsBgHQ _AmINPAD0EeeqDdbudsBgHQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AmINFAD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINFQD0EeeqDdbudsBgHQ" name="actComCompany" incomingEdges="_AmINNgD0EeeqDdbudsBgHQ" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#ru.iu.bachelor.sed.g03.specification.environment.actComCompany"/>
+      <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#ru.iu.bachelor.sed.g03.specification.environment.actComCompany"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AmINFgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" workspacePath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/big_actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_AmINFwD0EeeqDdbudsBgHQ" name="use case system usergoal ugSecurelyUseSystem()">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AmINGAD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundColor="114,159,207" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINGQD0EeeqDdbudsBgHQ" name="ugSecurelyUseSystem" outgoingEdges="_AmINIwD0EeeqDdbudsBgHQ _AmINJwD0EeeqDdbudsBgHQ _AmINKwD0EeeqDdbudsBgHQ _AmINLwD0EeeqDdbudsBgHQ _AmINMwD0EeeqDdbudsBgHQ _AmINNgD0EeeqDdbudsBgHQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+        <semanticElements xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AmINGgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINGwD0EeeqDdbudsBgHQ" name="sfEnterLoginPassword" outgoingEdges="_AmINOQD0EeeqDdbudsBgHQ" incomingEdges="_AmINIwD0EeeqDdbudsBgHQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.sfEnterLoginPassword"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.sfEnterLoginPassword"/>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AmINHAD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINHQD0EeeqDdbudsBgHQ" name="sfSMSValidate" outgoingEdges="_AmINPAD0EeeqDdbudsBgHQ" incomingEdges="_AmINJwD0EeeqDdbudsBgHQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.sfSMSValidate"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.sfSMSValidate"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AmINHgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINHwD0EeeqDdbudsBgHQ" name="oeLogin" incomingEdges="_AmINKwD0EeeqDdbudsBgHQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.oeLogin"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.oeLogin"/>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AmINIAD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AmINIQD0EeeqDdbudsBgHQ" name="oeLogout" incomingEdges="_AmINLwD0EeeqDdbudsBgHQ" width="15" height="5" resizeKind="NSEW">
+        <target xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.oeLogout"/>
+        <semanticElements xmi:type="messir:UseCaseSubfunction" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.oeLogout"/>
+        <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AmINIgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" horizontalDiameter="15" verticalDiameter="5" color="255,245,181">
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINIwD0EeeqDdbudsBgHQ" name="&lt;&lt;reuse>>" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINGwD0EeeqDdbudsBgHQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINJAD0EeeqDdbudsBgHQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINJQD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_AmINJgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINJwD0EeeqDdbudsBgHQ" name="&lt;&lt;reuse>>" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINHQD0EeeqDdbudsBgHQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINKAD0EeeqDdbudsBgHQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINKQD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_AmINKgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINKwD0EeeqDdbudsBgHQ" name="&lt;&lt;reuse>>" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINHwD0EeeqDdbudsBgHQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINLAD0EeeqDdbudsBgHQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINLQD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_AmINLgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINLwD0EeeqDdbudsBgHQ" name="&lt;&lt;reuse>>" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINIQD0EeeqDdbudsBgHQ" endLabel="[1..1]">
+      <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINMAD0EeeqDdbudsBgHQ" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINMQD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+        <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_AmINMgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='Fake_Relation_UseCase_UseCase']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINMwD0EeeqDdbudsBgHQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINEwD0EeeqDdbudsBgHQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.0/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.0/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINNAD0EeeqDdbudsBgHQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINNQD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINNgD0EeeqDdbudsBgHQ" name="&lt;&lt;secondary>>&#xA;&lt;&lt;reactive>>&#xA;" sourceNode="_AmINGQD0EeeqDdbudsBgHQ" targetNode="_AmINFQD0EeeqDdbudsBgHQ">
+      <target xmi:type="messir:SecondaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.0/@useCaseActors.1"/>
+      <semanticElements xmi:type="messir:SecondaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.0/@useCaseActors.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINNwD0EeeqDdbudsBgHQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINOAD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINOQD0EeeqDdbudsBgHQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_AmINGwD0EeeqDdbudsBgHQ" targetNode="_AmINEwD0EeeqDdbudsBgHQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.1/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.1/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINOgD0EeeqDdbudsBgHQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINOwD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AmINPAD0EeeqDdbudsBgHQ" name="&lt;&lt;primary>>&#xA;&lt;&lt;active>>&#xA;" sourceNode="_AmINHQD0EeeqDdbudsBgHQ" targetNode="_AmINEwD0EeeqDdbudsBgHQ">
+      <target xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.2/@useCaseActors.0"/>
+      <semanticElements xmi:type="messir:PrimaryUseCaseActor" href="usecases/usecases.msr#//@usecaseM/@useCases.2/@useCaseActors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AmINPQD0EeeqDdbudsBgHQ" targetArrow="NoDecoration" size="2" strokeColor="209,209,209">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AmINPgD0EeeqDdbudsBgHQ" labelSize="14" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_AmINPwD0EeeqDdbudsBgHQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_JmG-kQGeEee8orftCPkGLw" name="kkk">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_JmG-kgGeEee8orftCPkGLw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_JmG-kwGeEee8orftCPkGLw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_JmHloAGeEee8orftCPkGLw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_JmHloQGeEee8orftCPkGLw" type="Sirius" element="_JmG-kQGeEee8orftCPkGLw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_JmHlogGeEee8orftCPkGLw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_JmG-lAGeEee8orftCPkGLw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid42e8d8a39d3a40aaa255d25d9c7a9518"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

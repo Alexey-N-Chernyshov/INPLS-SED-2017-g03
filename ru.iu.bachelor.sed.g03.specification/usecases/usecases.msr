@@ -9,11 +9,38 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
+import ru.iu.bachelor.sed.g03.specification.environment
 
 
 
 	Use Case Model {
 		
+	use case system usergoal ugSecurelyUseSystem() {
+				actor actAuthenticated[primary, active]
+				actor actComCompany[secondary, reactive]
+				
+				reuse sfEnterLoginPassword[1..1]
+				reuse sfSMSValidate[1..1]
+				reuse oeLogin[1..1]
+				reuse oeLogout[1..1]
+				
+				step a: actAuthenticated executes sfEnterLoginPassword
+      			step b: actComCompany executes sfSMSValidate
+      			step c: actAuthenticated executes sfSMSValidate
+		}
+	use case system subfunction sfEnterLoginPassword() {
+			actor actAuthenticated[primary, active]
+		}
+	use case system subfunction sfSMSValidate() {
+			actor actAuthenticated[primary, active]
+			actor actComCompany[secondary, reactive]
+		}
+	use case system subfunction oeLogin() {
+			actor actAuthenticated[primary, active]
+		}
+	use case system subfunction oeLogout() {
+			actor actAuthenticated[primary, active]
+		}
 	}
 
 }

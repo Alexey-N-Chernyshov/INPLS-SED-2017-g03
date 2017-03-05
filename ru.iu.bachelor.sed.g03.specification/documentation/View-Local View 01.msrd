@@ -1,0 +1,25 @@
+/*
+@author Yex
+@date Sun Mar 05 14:39:03 MSK 2017
+*/
+
+
+@@view Local View 01
+@model Environment 
+@level Local
+@number 1
+@description ""
+@caption ""
+@@view Local View 01
+@model Environment 
+@level Local
+@number 1
+@description ""
+@caption ""
+
+@@view Local View 01
+@model Environment 
+@level Local
+@number 1
+@description ""
+@caption ""

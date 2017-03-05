@@ -1,0 +1,20 @@
+/*
+@author Yex
+@date Sat Mar 04 18:22:47 MSK 2017
+*/
+
+
+@@view ugSecurelyUseSystem
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem 
+@description "User goal for securely use of the system"
+@caption ""
+
+@@view ugSecurelyUseSystem
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem 
+@description ""
+@caption ""
+
+@@view ugSecurelyUseSystem
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem 
+@description ""
+@caption ""
