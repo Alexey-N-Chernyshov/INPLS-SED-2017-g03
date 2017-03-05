@@ -9,17 +9,25 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
-
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
 
 
 Environment Model {
 			
-actor actComCompany role rnactComCompany cardinality[0 .. *] {
-			input interface inactComCompany {
-			}
-			output interface outactComCompany {
-			}
+	actor actComCompany role rnactComCompany cardinality[0..*] {
+	
+		operation init():ptBoolean
+	
+		input interface inactComCompany {
+			operation ieSmsSend(AdtPhoneNumber:dtPhoneNumber, 
+							AdtSMS:dtSMS
+							):ptBoolean
 		}
+	
+		output interface outactComCompany {
+		}
+	}
+
 	abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
 			input interface inactAuthenticated {
 			}

@@ -1,0 +1,24 @@
+/*
+@author Yex
+@date Sun Mar 05 15:39:03 MSK 2017
+*/
+
+
+@@Use Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem
+@description "ugSecurelyUseSystem"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
