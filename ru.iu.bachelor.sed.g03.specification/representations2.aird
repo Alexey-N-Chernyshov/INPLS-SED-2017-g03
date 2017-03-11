@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_fCBhsO-DEeanLeVE-90uOw" selectedViews="_fCfbwO-DEeanLeVE-90uOw" version="11.1.0.201608251200">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_qgOXAAYDEeeCqcM65EHE8A" selectedViews="_qkWCAAYDEeeCqcM65EHE8A" version="11.1.0.201608251200">
   <semanticResources>concepts/primarytypes-associations/primarytypes-associations.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/calendar.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/math.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/primitives.msr</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/string.msr</semanticResources>
+  <semanticResources>concepts/secondarytypes-associations/secondarytypes-associations.msr</semanticResources>
   <semanticResources>concepts/primarytypes-classes/primarytypes-classes.msr</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/primarytypes-datatypes.msr</semanticResources>
-  <semanticResources>concepts/secondarytypes-associations/secondarytypes-associations.msr</semanticResources>
   <semanticResources>concepts/secondarytypes-classes/secondarytypes-classes.msr</semanticResources>
   <semanticResources>environment/environment.msr</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/secondarytypes-datatypes.msr</semanticResources>
@@ -224,11 +224,38 @@
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptInteger.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptReal.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
-  <semanticResources>documentation/View-Local%20View%2001.msrd</semanticResources>
-  <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actComCompany.msrd</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fCfbwO-DEeanLeVE-90uOw">
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-asdtString.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAlertID.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtComment.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPhoneNumber.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Enumeration-etHumanKind.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctState-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actComCompany-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAlertID-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
+  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-length.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-myStringConcat.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actComCompany-outactComCompany-oeAlert.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-ugSecurelyUseSystem.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeLogin.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-oeLogout.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfEnterLoginPassword.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCase-sfSMSValidate.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctState.msrd</semanticResources>
+  <semanticResources>documentation/View-uc-ugSecurelyUseSystem.msrd</semanticResources>
+  <semanticResources>operations/environment/environment-actAuthenticated-oeLogin.msr</semanticResources>
+  <semanticResources>operations/environment/environment-actAuthenticated-oeLogout.msr</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterLoginAndPassword.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterSmsCode.msrd</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_qkWCAAYDEeeCqcM65EHE8A">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>
 </viewpoint:DAnalysis>

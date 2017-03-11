@@ -1,0 +1,39 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:30:22 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.environment.actComCompany.outactComCompany.oeAlert
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actComCompany.outactComCompany.oeAlert.AetHumanKind
+""
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actComCompany.outactComCompany.oeAlert.AdtPhoneNumber
+""
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actComCompany.outactComCompany.oeAlert.AdtComment
+""
+@endParameters
+
+@description "Sample description"
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

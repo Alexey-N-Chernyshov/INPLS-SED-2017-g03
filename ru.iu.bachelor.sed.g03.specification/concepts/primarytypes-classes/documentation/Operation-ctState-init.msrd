@@ -1,0 +1,21 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:28:47 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.init
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.init.AvpStarted
+""
+@endParameters
+
+@description "used to initialize the current object as a new instance of the ctState type."
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new ctState instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

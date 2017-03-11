@@ -1,11 +1,14 @@
 /*
-@author Yex
-@date Sun Mar 05 15:35:37 MSK 2017
+@author dsalxv
+@date Mon Mar 06 15:27:53 MSK 2017
 */
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actComCompany
-@description ""
+@description "Sample description"
+@operation ru.iu.bachelor.sed.g03.specification.environment.actComCompany.init
+" "
+@endOperations
 //input events
 @inputEvent
 ru.iu.bachelor.sed.g03.specification.environment.actComCompany.inactComCompany.ieSmsSend
@@ -13,4 +16,8 @@ ru.iu.bachelor.sed.g03.specification.environment.actComCompany.inactComCompany.i
 
 @endInputEvents
 //output events
+@outputEvent
+ru.iu.bachelor.sed.g03.specification.environment.actComCompany.outactComCompany.oeAlert
+""
 
+@endOutputEvents

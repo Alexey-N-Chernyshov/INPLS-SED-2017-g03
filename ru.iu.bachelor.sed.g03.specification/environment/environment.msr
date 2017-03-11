@@ -1,6 +1,6 @@
 /*
 * @author dsalxv
-* @date Fri Feb 10 14:24:25 MSK 2017
+* @date Mon Mar 06 15:02:25 MSK 2017
 */
 
 package ru.iu.bachelor.sed.g03.specification.environment {
@@ -10,29 +10,37 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
+import ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes
+
 
 
 Environment Model {
-			
+
 	actor actComCompany role rnactComCompany cardinality[0..*] {
-	
+
 		operation init():ptBoolean
-	
+
 		input interface inactComCompany {
-			operation ieSmsSend(AdtPhoneNumber:dtPhoneNumber, 
-							AdtSMS:dtSMS
-							):ptBoolean
+			operation ieSmsSend(AdtPhoneNumber: dtPhoneNumber, AdtSMS: dtSms): ptBoolean
 		}
-	
+
 		output interface outactComCompany {
+			operation oeAlert(AetHumanKind: etHumanKind, AdtPhoneNumber: dtPhoneNumber, AdtComment: dtComment): ptBoolean
 		}
+
 	}
 
 	abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
+
 			input interface inactAuthenticated {
+				operation ieValidateSmsCode(): ptBoolean
+				operation ieLoginPasswordCorrect(): ptBoolean
 			}
+
 			output interface outactAuthenticated {
+				operation oeEnterLoginAndPassword(): ptBoolean
+				operation oeEnterSmsCode(): ptBoolean
 			}
-		}
 	}
+}
 }

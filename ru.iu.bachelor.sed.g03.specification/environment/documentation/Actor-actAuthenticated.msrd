@@ -1,12 +1,15 @@
 /*
-@author Yex
-@date Sun Mar 05 15:35:01 MSK 2017
+@author dsalxv
+@date Mon Mar 06 15:27:36 MSK 2017
 */
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated
-@description "Authenticated actor"
+@description "Sample description"
 //input events
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.inactAuthenticated.ieLoginPasswordCorrect
+""
 
+@endInputEvents
 //output events
 

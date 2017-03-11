@@ -1,0 +1,15 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:28:41 MSK 2017
+*/
+
+
+@@Secondary Type Enumeration ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.etHumanKind
+@description "Sample description"
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.etHumanKind.is
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.etHumanKind.asdtString
+""
+@endOperations

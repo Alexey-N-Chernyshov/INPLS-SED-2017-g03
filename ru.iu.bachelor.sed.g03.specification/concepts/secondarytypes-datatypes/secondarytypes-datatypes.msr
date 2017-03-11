@@ -1,6 +1,6 @@
 /*
 * @author dsalxv
-* @date Fri Feb 10 14:24:25 MSK 2017
+* @date Mon Mar 06 15:02:25 MSK 2017
 */
 
 package ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes {
@@ -16,7 +16,17 @@ Concept Model {
 
 	Secondary Types {
 
-	}
+		datatype dtSms extends dtString{
+			operation is():ptBoolean
+		}
 
+		enum etHumanKind {
+			constants["witness","victim","anonymous"]
+
+			operation is():ptBoolean
+			operation asdtString():dtString
+		}
+		
+	}
 }
 }
