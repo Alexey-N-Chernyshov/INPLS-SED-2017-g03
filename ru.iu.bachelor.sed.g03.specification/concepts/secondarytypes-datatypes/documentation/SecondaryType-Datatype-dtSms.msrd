@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:28:31 MSK 2017
+*/
+
+
+@@Secondary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms
+@description "Sample description"
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms.is
+""
+@endOperations

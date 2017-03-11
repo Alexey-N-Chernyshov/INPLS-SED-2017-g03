@@ -1,0 +1,24 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:30:49 MSK 2017
+*/
+
+
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.sfSMSValidate
+@description "Sample description"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

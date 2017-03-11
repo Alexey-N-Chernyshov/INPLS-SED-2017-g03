@@ -1,0 +1,32 @@
+/*
+* @author dsalxv
+* @date Mon Mar 06 15:02:25 MSK 2017
+*/
+
+package ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+
+Concept Model {
+
+	Secondary Types {
+
+		datatype dtSms extends dtString{
+			operation is():ptBoolean
+		}
+
+		enum etHumanKind {
+			constants["witness","victim","anonymous"]
+
+			operation is():ptBoolean
+			operation asdtString():dtString
+		}
+		
+	}
+}
+}

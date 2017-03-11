@@ -1,0 +1,15 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:27:36 MSK 2017
+*/
+
+
+@@Actor ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated
+@description "Sample description"
+//input events
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.inactAuthenticated.ieLoginPasswordCorrect
+""
+
+@endInputEvents
+//output events
+

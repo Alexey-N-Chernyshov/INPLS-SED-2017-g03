@@ -1,0 +1,21 @@
+/*
+@author dsalxv
+@date Mon Mar 06 15:30:15 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtString.myStringConcat
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtString.myStringConcat.AdtString2IN
+""
+@endParameters
+
+@description "Sample description"
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

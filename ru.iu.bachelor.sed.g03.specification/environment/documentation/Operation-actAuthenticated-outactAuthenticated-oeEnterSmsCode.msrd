@@ -1,0 +1,28 @@
+/*
+@author dsalxv
+@date Mon Mar 06 19:39:09 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeEnterSmsCode
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

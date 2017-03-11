@@ -1,0 +1,91 @@
+% Last Modification:
+% @author AUTHOR_NAME
+% @date TODAY_DATE
+
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Overview}
+Motivation for creating this Specification report is that iCrash CMS system has
+been updated recently. In this new version we have to cover the main changes and
+their affects on the other modules of the system. \\
+This Specification report should be considered as the only true. Because
+previous versions doesn`t consider actual featrues of current version of iCrash system
+and there is no other actual version except this neither printed nor the online
+help. This document provides minimum acceptable information for knowing how to
+use iCrash. \\
+This Specification report is limited to the software documentation product and
+does not include the processes of developing or managing software user documentation. It does not apply to specialized course materials
+intended primarily for use in formal training programs. \\
+
+\section{Purpose and recipients of the document}
+The aim of this document is to provide an example of how the design of a
+particular software system should be documented.
+
+The recipient of this document is the development company (ADC) in charge
+of delivering the software system. The company's developers are
+expected to use this document as the basis for carrying out the actual
+development and deployment of the product (i.e. implementation, testing
+and maintenance).
+
+ 
+\section{Application Domain}
+iCrash system is dedicated to inform about a car crash and help with crisis
+handling. The purpose of this application is to take control over emergency
+situations, optimize the process of their resolving, to provide mechanism of
+centralized information gathering from any person involved in car crash crisis
+and to guide victims during crisis handling.
+ 
+\section{Definitions, acronyms and abbreviations}
+
+\subsubsection{Activator}
+Represents a logical actor for time automatic message sending based on system’s
+or environment status.\\
+Functionalities:
+\begin{itemize}
+  \item Communication of the current time to the system
+  \item Notification of the administrator that some crisis are still pending for
+  a too long time
+\end{itemize}
+
+\subsubsection{Administrator}
+Represents an actor responsible of administration tasks for the iCrash system.\\
+Functionalities:
+\begin{itemize}
+  \item Adding coordinator actors to the system and its environment
+  \item Deleting coordinator actors from the system and its environment
+\end{itemize}
+
+\subsubsection{Communication Company}
+Represents the communication company stakeholder ensuring the input/ouput of
+textual messages with humans having communication devices.\\
+Functionalities:
+\begin{itemize}
+  \item Delivery of any SMS sent by any human to the iCrash's phone number
+  \item Transmission of SMS messages from the ABC company that owns the iCrash
+  system to any human having an SMS compatible device accessible using a phone
+  number
+\end{itemize}
+
+\subsubsection{Coordinator}
+Represents actor responsible of handling one or several crisis for the iCrash
+system.\\
+Functionalities:
+\begin{itemize}
+  \item Securely monitoring the existing alerts and crisis
+  \item Securely managing alerts and crisis until their termination
+\end{itemize}
+
+\subsubsection{Messir Creator}
+Represents the creator stakeholder in charge of state and environment
+initialization.\\
+Functionalities:
+\begin{itemize}
+  \item Installation of the iCrash System
+  \item Definition of the values for the initial system’s state
+  \item Definition of the values for the initial system’s environment
+  \item Ensurance of  the integration of the iCrash system with its initial
+  environment
+\end{itemize}
+
+\section{Document structure} 
