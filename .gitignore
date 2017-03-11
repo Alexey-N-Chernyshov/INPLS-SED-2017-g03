@@ -1,9 +1,16 @@
+# libraries projects
+lu.uni.lassy.excalibur.standard.report.libraries
+lu.uni.lassy.excalibur.standard.specification.libraries
+
+# os specific unnecessary files
 .DS_Store
+
+# eclipse unnecessary environmental files
 **/.externalToolBuilders
 **/*.launch
 **/.texlipse
-lu.uni.lassy.excalibur.standard.report.libraries
-lu.uni.lassy.excalibur.standard.specification.libraries
+
+# output and generated files
 *.pdf
 **/tmp/
 *.aux
@@ -27,4 +34,3 @@ lu.uni.lassy.excalibur.standard.specification.libraries
 *.ilg
 *.ind
 *.swp
-**/.project
