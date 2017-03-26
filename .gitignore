@@ -13,6 +13,7 @@ lu.uni.lassy.excalibur.standard.specification.libraries
 # output and generated files
 *.pdf
 **/tmp/
+**/tmp*/*
 *.aux
 *.bbl
 *.blg
@@ -30,6 +31,7 @@ lu.uni.lassy.excalibur.standard.specification.libraries
 *.mtc
 *.mtc0
 *.idx
+*.gls
 *.glsdefs
 *.ilg
 *.ind
