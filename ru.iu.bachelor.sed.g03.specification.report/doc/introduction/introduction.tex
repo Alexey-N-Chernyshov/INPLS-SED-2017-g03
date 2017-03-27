@@ -10,8 +10,8 @@ Motivation for creating this Specification report is that iCrash CMS system has
 been updated recently. In this new version we have to cover the main changes and
 their affects on the other modules of the system. \\
 This Specification report should be considered as the only true. Because
-previous versions doesn`t consider actual featrues of current version of iCrash system
-and there is no other actual version except this neither printed nor the online
+previous versions doesn`t consider actual features of current version of iCrash
+system and there is no other actual version except this neither printed nor the online
 help. This document provides minimum acceptable information for knowing how to
 use iCrash. \\
 This Specification report is limited to the software documentation product and
@@ -19,15 +19,17 @@ does not include the processes of developing or managing software user documenta
 intended primarily for use in formal training programs. \\
 
 \section{Purpose and recipients of the document}
-The aim of this document is to provide an example of how the design of a
-particular software system should be documented.
-
-The recipient of this document is the development company (ADC) in charge
-of delivering the software system. The company's developers are
-expected to use this document as the basis for carrying out the actual
-development and deployment of the product (i.e. implementation, testing
-and maintenance).
-
+This document is an analysis document complying with the Messir methodology. Its
+intent is to provide an example of a precise specification of the functional properties of the iCrash system.
+The recipients of this document are:
+\begin{itemize}
+\item the iCrash system’s buyer company (ABC): this document is used as a
+contractual document jointly with any other document considered as useful (as requirement elicitation document, . . . ) in order to have a higher degree of precision in requirement description. It is also used as a basis document for the iCrash system validation using specification based testing.
+\item the iCrash system development company (ADC) is expected to use this
+document as the basis for development (mainly design, implementation, maintenance). It is also used for verification
+and validation using test plans defined using the analysis models described in this document and
+according to the Messir methodology.
+\end{itemize}
  
 \section{Application Domain}
 iCrash system is dedicated to inform about a car crash and help with crisis
@@ -38,7 +40,7 @@ and to guide victims during crisis handling.
  
 \section{Definitions, acronyms and abbreviations}
 
-\subsubsection{Activator}
+\subsection{Activator}
 Represents a logical actor for time automatic message sending based on systemâ€™s
 or environment status.\\
 Functionalities:
@@ -48,7 +50,7 @@ Functionalities:
   a too long time
 \end{itemize}
 
-\subsubsection{Administrator}
+\subsection{Administrator}
 Represents an actor responsible of administration tasks for the iCrash system.\\
 Functionalities:
 \begin{itemize}
@@ -56,7 +58,7 @@ Functionalities:
   \item Deleting coordinator actors from the system and its environment
 \end{itemize}
 
-\subsubsection{Communication Company}
+\subsection{Communication Company}
 Represents the communication company stakeholder ensuring the input/ouput of
 textual messages with humans having communication devices.\\
 Functionalities:
@@ -67,7 +69,7 @@ Functionalities:
   number
 \end{itemize}
 
-\subsubsection{Coordinator}
+\subsection{Coordinator}
 Represents actor responsible of handling one or several crisis for the iCrash
 system.\\
 Functionalities:
@@ -76,7 +78,7 @@ Functionalities:
   \item Securely managing alerts and crisis until their termination
 \end{itemize}
 
-\subsubsection{Messir Creator}
+\subsection{Messir Creator}
 Represents the creator stakeholder in charge of state and environment
 initialization.\\
 Functionalities:
@@ -88,4 +90,11 @@ Functionalities:
   environment
 \end{itemize}
 
-\section{Document structure} 
+\section{Document structure}
+The document structure is designed to be coherent with the Messir methodology. Section
+2 provides a general description of the system purpose, its users, its environment and some general
+non functional requirements. The system operation triggered by events sent by the external actors
+belonging to the environment are described in Section 3. The iCrash concepts used to represent the
+any persistent or transient information is given in Section 4. The precise specification of the system
+operations in term of system’s state changes, events sent together with the constraints on the allowed
+sequences of system operations are described in Section 5.
