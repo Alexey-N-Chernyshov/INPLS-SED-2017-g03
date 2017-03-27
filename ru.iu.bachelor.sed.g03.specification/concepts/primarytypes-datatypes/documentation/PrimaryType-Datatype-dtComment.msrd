@@ -5,8 +5,8 @@
 
 
 @@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtComment
-@description "Sample description"
+@description "a data type made of a string value used to receive,store and send textual information about crisis and alerts."
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtComment.is
-""
+"used to determine which strings are considered as valid comments."
 @endOperations

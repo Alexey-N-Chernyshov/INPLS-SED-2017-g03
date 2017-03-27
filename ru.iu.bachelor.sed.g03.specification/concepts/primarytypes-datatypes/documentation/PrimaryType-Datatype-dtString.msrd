@@ -5,6 +5,7 @@
 
 
 @@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtString
+hidden
 @description "Sample description"
 @attribute
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtString.value

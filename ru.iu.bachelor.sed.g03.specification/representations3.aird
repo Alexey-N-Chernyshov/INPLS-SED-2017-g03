@@ -231,7 +231,6 @@
     <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAlertID.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtComment.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPhoneNumber.msrd</semanticResources>
-    <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
     <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Enumeration-etHumanKind.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctState-init.msrd</semanticResources>
@@ -240,7 +239,6 @@
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAlertID-is.msrd</semanticResources>
-    <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
     <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-length.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-myStringConcat.msrd</semanticResources>
@@ -256,6 +254,32 @@
     <semanticResources>operations/environment/environment-actAuthenticated-oeLogout.msr</semanticResources>
     <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterLoginAndPassword.msrd</semanticResources>
     <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterSmsCode.msrd</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtAlertID-is.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCrisisID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCrisisID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLogin.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLogin-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPassword.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPassword-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCoordinatorID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCoordinatorID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLatitude.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLatitude-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLongitude.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLongitude-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtGPSLocation.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtGPSLocation-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtGPSLocation-isNearTo.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etCrisisStatus.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etCrisisStatus-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etAlertStatus.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etAlertStatus-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etCrisisType.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etCrisisType-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etHumanKind.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
+    <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
+    <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_xPqQsAJkEeeNMqg1Uehg_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_TwUPEAJqEeeNMqg1Uehg_A" name="uc-ugSecurelyUseSystem" representation="_TwWrUAJqEeeNMqg1Uehg_A">

@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Mar 27 14:11:46 MSK 2017
+*/
+
+
+@@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtLongitude
+@description "used to define a longitude value of a geographical positions on earth."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtLongitude.is
+"used to determine which strings are considered as valid dtLongitude."
+@endOperations

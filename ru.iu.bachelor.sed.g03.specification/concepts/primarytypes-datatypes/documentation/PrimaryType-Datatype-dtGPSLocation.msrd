@@ -1,0 +1,22 @@
+/*
+@author dsalxv
+@date Mon Mar 27 17:27:33 MSK 2017
+*/
+
+
+@@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation
+@description ""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.latitude
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.longitude
+""
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.is
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
+""
+@endOperations

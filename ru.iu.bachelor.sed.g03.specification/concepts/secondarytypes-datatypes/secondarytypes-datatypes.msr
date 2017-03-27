@@ -17,15 +17,16 @@ Concept Model {
 	Secondary Types {
 
 		datatype dtSms extends dtString{
+			attribute value: ptString
 			operation is():ptBoolean
 		}
-
-		enum etHumanKind {
-			constants["witness","victim","anonymous"]
-
-			operation is():ptBoolean
-			operation asdtString():dtString
-		}
+//
+//		enum etHumanKind {
+//			constants["witness", "victim", "anonymous"]
+//
+//			operation is():ptBoolean
+//			operation asdtString():dtString
+//		}
 		
 	}
 }
