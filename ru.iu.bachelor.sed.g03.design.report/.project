@@ -3,6 +3,7 @@
 	<name>ru.iu.bachelor.sed.g03.design.report</name>
 	<comment></comment>
 	<projects>
+		<project>lu.uni.lassy.excalibur.standard.report.libraries</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -16,7 +17,7 @@
 			<arguments>
 				<dictionary>
 					<key>LaunchConfigHandle</key>
-					<value>&lt;project&gt;/.externalToolBuilders/MakeGlossariesDesign.launch</value>
+					<value>&lt;project&gt;/.externalToolBuilders/make_glossaries_design.launch</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>
