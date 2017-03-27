@@ -4,6 +4,6 @@ ImportedPackages=/lu.uni.lassy.excalibur.standard.specification.libraries/librar
 ReportProjectName=ru.iu.bachelor.sed.g03.specification.report
 SimulationProjectName=ru.iu.bachelor.sed.g03.specification.simulation
 StandardLibrariesProjectName=lu.uni.lassy.excalibur.standard.specification.libraries
-ViewerViewsFontSize=14
+ViewerViewsFontSize=8
 eclipse.preferences.version=1
 enableProjectSpecificMsrLicenseFolding=false
