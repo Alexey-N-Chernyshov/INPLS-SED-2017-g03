@@ -49,5 +49,66 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			actor actAuthenticated[primary, active]
 		}
 
+		use case system summary suDeployAndRun() {
+			//actor actMsrCreator[primary, active]
+			//actor actCoordinator[primary, active]
+			//actor actAdministrator[primary, active]
+			//actor actActivator[primary, proactive]
+			//actor actComCompany[primary, active]
+			
+			reuse oeCreateSystemAndEnvironment[1..1]
+			reuse ugAdministrateTheSystem[1..*]
+			reuse suGlobalCrisisHandling[1..*]
+			reuse oeSetClock[1..*]
+			reuse oeSollicitateCrisisHandling[0..*]
+			reuse oeAlert[1..*]
+			
+			step a: actMsrCreator executes oeCreateSystemAndEnvironment
+			step b: actAdministrator executes ugAdministrateTheSystem
+			step c: actComCompany executes oeAlert
+			step d: actActivator executes oeSetClock
+			step ^e: actActivator executes oeSollicitateCrisisHandling
+			step f: actCoordinator executes suGlobalCrisisHandling
+			
+			ordering constraint 
+        		"step (a) must be always the first step."
+        	ordering constraint 
+				"step (f) can be executed by different actCoordinator actors."
+			ordering constraint 
+				"if (e) then previously (d)."
+		}
+		
+		use case system subfunction oeCreateSystemAndEnvironment(AqtyComCompanies:ptInteger) {
+			actor actMsrCreator[primary, active]
+		}
+		
+		use case system usergoal ugAdministrateTheSystem() {
+			actor actAdministrator[primary,active]
+		}
+		
+		use case system usergoal suGlobalCrisisHandling() {
+			actor actCoordinator[primary,active]
+		}
+		
+		use case system subfunction oeSetClock(AcurrentClock:dtDateAndTime) {
+			actor actActivator[primary,proactive]
+		}
+		
+		use case system subfunction oeSollicitateCrisisHandling() {
+			actor actActivator[primary,proactive]
+			actor actCoordinator[secondary,passive,multiple]
+			actor actAdministrator[secondary,passive]
+    	}
+
+		use case system subfunction oeAlert(
+//								AetKind:etHumanKind,
+								AdtMyDate:dtDate,
+								AdtTime:dtTime//,
+//								AdtPhoneNumber:dtPhoneNumber,
+//								AdtGPSLocation:dtGPSLocation,
+//								AdtComment:dtComment
+								) {
+    		actor actComCompany[primary,active]
+		}
 	}
 }
