@@ -5,8 +5,8 @@
 
 
 @@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtPhoneNumber
-@description "Sample description"
+@description "a string used to store the phone number from the human declaring the crisis or the alert."
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtPhoneNumber.is
-""
+"used to determine which strings are considered as valid dtPhoneNumber."
 @endOperations

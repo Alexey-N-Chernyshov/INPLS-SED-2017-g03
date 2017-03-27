@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Mar 27 14:11:42 MSK 2017
+*/
+
+
+@@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtCoordinatorID
+@description "a string used to identify coordinators."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtCoordinatorID.is
+"used to determine which strings are considered as valid coordinators identifiers."
+@endOperations

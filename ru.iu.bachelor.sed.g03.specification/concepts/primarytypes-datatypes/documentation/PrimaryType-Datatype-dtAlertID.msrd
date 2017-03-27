@@ -5,8 +5,8 @@
 
 
 @@Primary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtAlertID
-@description "Sample description"
+@description "a string used to identify alerts."
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtAlertID.is
-""
+"used to determine which strings are considered as valid alert identifiers."
 @endOperations

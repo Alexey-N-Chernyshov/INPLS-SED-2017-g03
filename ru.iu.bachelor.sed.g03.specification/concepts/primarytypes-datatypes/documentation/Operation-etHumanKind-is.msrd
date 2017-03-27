@@ -1,11 +1,11 @@
 /*
 @author dsalxv
-@date Mon Mar 27 18:14:42 MSK 2017
+@date Mon Mar 27 18:06:52 MSK 2017
 */
 
 
 @@Operation
-ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms.is
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.etHumanKind.is
 @description "
  "
 //postFunctional descriptions

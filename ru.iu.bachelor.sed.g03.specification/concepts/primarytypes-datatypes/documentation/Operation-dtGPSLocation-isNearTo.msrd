@@ -1,0 +1,22 @@
+/*
+@author dsalxv
+@date Mon Mar 27 18:06:44 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtGPSLocation.isNearTo.AGPSLocation
+""
+@endParameters
+
+@description "
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "
