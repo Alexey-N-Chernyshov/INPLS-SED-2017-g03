@@ -6,8 +6,18 @@ All known and non solved issues (like bugs, missing functionalities, abnormal
 behavior, etc.) should be precisely stated and described.
 
 
-\section{Issue 1}
-TODO
+\section{Issue 1. Alert priority}
+If several alerts occures near one point and have different descriptions, the
+first alert has most priority. However, alerts may contradict each other that
+can cause abnormal behavior of the system.
 
-\section{Issue 2}
-TODO
+\section{Issue 2. Alert radius}
+It is very important to limit the radius of alerts to be considered as alerts
+about the same event to prevent hypergeneralization.
+
+\section{Issue 3. Delete of cooredinator}
+If coordinator that was attached to some event was deleted, the abnormal
+undefined behavior of the system arises.
+
+\section{Issue 4. Display SMS-compatible devices limitations}
+Limitation of SMS-compatible devices to display provided information.
