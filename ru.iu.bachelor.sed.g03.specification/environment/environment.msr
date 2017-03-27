@@ -16,21 +16,21 @@ import ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes
 
 Environment Model {
 
-	actor actComCompany role rnactComCompany cardinality[0..*] {
+		actor actComCompany role rnactComCompany cardinality[0..*] {
 
-		operation init():ptBoolean
+			operation init():ptBoolean
 
-		input interface inactComCompany {
-			operation ieSmsSend(AdtPhoneNumber: dtPhoneNumber, AdtSMS: dtSms): ptBoolean
+			input interface inactComCompany {
+				operation ieSmsSend(AdtPhoneNumber: dtPhoneNumber, AdtSMS: dtSms): ptBoolean
+			}
+
+			output interface outactComCompany {
+				operation oeAlert(AetHumanKind: etHumanKind, AdtPhoneNumber: dtPhoneNumber, AdtComment: dtComment): ptBoolean
+			}
+
 		}
 
-		output interface outactComCompany {
-			operation oeAlert(AetHumanKind: etHumanKind, AdtPhoneNumber: dtPhoneNumber, AdtComment: dtComment): ptBoolean
-		}
-
-	}
-
-	abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
+		abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
 
 			input interface inactAuthenticated {
 				operation ieValidateSmsCode(): ptBoolean
@@ -41,6 +41,30 @@ Environment Model {
 				operation oeEnterLoginAndPassword(): ptBoolean
 				operation oeEnterSmsCode(): ptBoolean
 			}
-	}
+		}
+		actor actMsrCreator role rnactMsrCreator cardinality[1 .. 1] {
+			input interface inactMsrCreator {
+			}
+			output interface outactMsrCreator {
+			}
+		}
+		actor actCoordinator role rnactCoordinator cardinality[0 .. *] {
+			input interface inactCoordinator {
+			}
+			output interface outactCoordinator {
+			}
+		}
+		actor actAdministrator role rnactAdministrator cardinality[1 .. *] {
+			input interface inactAdministrator {
+			}
+			output interface outactAdministrator {
+			}
+		}
+		actor actActivator role rnactActivator cardinality[0 .. *] {
+			input interface inactActivator {
+			}
+			output interface outactActivator {
+			}
+		}
 }
 }

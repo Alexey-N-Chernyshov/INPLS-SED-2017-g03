@@ -1,0 +1,24 @@
+/*
+@author Yex
+@date Mon Mar 27 18:22:48 MSK 2017
+*/
+
+
+@@Use Case ru.iu.bachelor.sed.g03.specification.usecases.suGlobalCrisisHandling
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

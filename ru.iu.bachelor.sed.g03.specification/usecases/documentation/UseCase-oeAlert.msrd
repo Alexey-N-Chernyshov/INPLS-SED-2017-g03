@@ -1,0 +1,27 @@
+/*
+@author Yex
+@date Mon Mar 27 18:22:51 MSK 2017
+*/
+
+
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeAlert
+@description ""
+@parameter ru.iu.bachelor.sed.g03.specification.usecases.oeAlert.AdtMyDate ""
+@parameter ru.iu.bachelor.sed.g03.specification.usecases.oeAlert.AdtTime ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

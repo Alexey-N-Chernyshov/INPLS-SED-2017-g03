@@ -1,0 +1,26 @@
+/*
+@author Yex
+@date Mon Mar 27 18:22:46 MSK 2017
+*/
+
+
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeCreateSystemAndEnvironment
+@description ""
+@parameter ru.iu.bachelor.sed.g03.specification.usecases.oeCreateSystemAndEnvironment.AqtyComCompanies ""
+@endParameters
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

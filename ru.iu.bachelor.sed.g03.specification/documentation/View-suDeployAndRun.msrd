@@ -1,0 +1,10 @@
+/*
+@author Yex
+@date Mon Mar 27 18:22:37 MSK 2017
+*/
+
+
+@@view suDeployAndRun
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.suDeployAndRun
+@description "Use case for deploy and run summary level use case"
+@caption "Use case for deploy and run summary level use case"
