@@ -3,41 +3,49 @@
 % @date TODAY_DATE
 
 \chapter{General Description}
-In the context of the \msrmessir method, the information provided in this section
-is intended to present the system for which the \msrmessir analysis is provided. The content of this section is made
-accordingly to the requirements elicitation document that might have been done during the project
-but also adapted coherently in order to be an abstract introduction to the \msrmessir analysis.
+In the context of the \msrmessir method, the information provided in this
+section is intended to present the system for which the \msrmessir analysis is
+provided. The content of this section is made accordingly to the requirements
+elicitation document that might have been done during the project but also
+adapted coherently in order to be an abstract introduction to the \msrmessir
+analysis.
 
 \section{Domain Stakeholders}
-All stakeholders of the system are detailed in this section. After a brief description of a stakeholder,
-its objectives are first stated. Thereafter, the responsibilities of the stakeholder are detailed which
-help to achieve the stakeholder objectives to a certain degree. While the objectives characterize the
-general problems addressed by the iCrash system, the responsibilities describe concrete actions that
-are expected from a stakeholder. All stakeholders listed in this section have an
-interest in the system or are affected by the system in some way, but only a subset of the stakeholders are directly involved in the use cases described. Let us remind that use case
-diagrams or descriptions are not Messir analysis phase mandatory outputs. They are proposed as
-informal means to help understanding the semantics of the system specification made of the mandatory
-analysis models, which provide a complete executable specification.
+All stakeholders of the system are detailed in this section. After a brief
+description of a stakeholder, its objectives are first stated. Thereafter, the
+responsibilities of the stakeholder are detailed which help to achieve the
+stakeholder objectives to a certain degree. While the objectives characterize
+the general problems addressed by the iCrash system, the responsibilities
+describe concrete actions that are expected from a stakeholder. All stakeholders
+listed in this section have an interest in the system or are affected by the
+system in some way, but only a subset of the stakeholders are directly involved
+in the use cases described. Let us remind that use case diagrams or descriptions
+are not Messir analysis phase mandatory outputs. They are proposed as informal
+means to help understanding the semantics of the system specification made of
+the mandatory analysis models, which provide a complete executable
+specification.
 
 \subsection{Communication Company}
-A Communication Company is a company that has the capacity to ensure communication of
-information between its customers and the iCrash system. The objectives of a Communication
-Company are:
+A Communication Company is a company that has the capacity to ensure
+communication of information between its customers and the iCrash system. The
+objectives of a Communication Company are:
 \begin{itemize}
-\item to be able to deliver any SMS sent by any human to the iCrash ’s phone
+\item to be able to deliver any SMS sent by any human to the iCrash's phone
 number.
 \item to be able to transmit SMS messages from the ABC company that owns the
-iCrash system to any human having an SMS compatible device accessible using a phone number.
+iCrash system to any human having an SMS compatible device accessible using a
+phone number.
 \end{itemize}
-In order to achieve these objectives, the responsibilities of a Communication Company are:
+In order to achieve these objectives, the responsibilities of a Communication
+Company are:
 \begin{itemize}
-\item ensure confidentiality and integrity of the information sent by a human to the iCrash system or
-from the system to a human.
+\item ensure confidentiality and integrity of the information sent by a human
+to the iCrash system or from the system to a human.
 \item to be always available and reliable.
 \end{itemize}
 \subsection{Humans}
-A human is any person who considers himself related to a car crash either as a witness, a victim or an
-anonymous person. The objectives of a human are:
+A human is any person who considers himself related to a car crash either as a
+witness, a victim or an anonymous person. The objectives of a human are:
 \begin{itemize}
 \item inform the iCrash system about the crisis situation he detected.
 \item be sure that the ABC company has been informed about the situation.
@@ -54,8 +62,8 @@ In order to achieve these objectives, the responsibilities of a human are:
 \end{itemize}
 iCrash system.
 \subsection{Coordinators}
-A coordinator is a employee of the ABC company being responsible of handling one or several crisis.
-The objectives of a coordinator are:
+A coordinator is a employee of the ABC company being responsible of handling one
+or several crisis. The objectives of a coordinator are:
 \begin{itemize}
 \item   to securely monitor the existing alerts and crisis.
 \item   to securely manage alerts and crisis until their termination.
@@ -70,8 +78,8 @@ In order to achieve these objectives, the responsibilities of a coordinator are:
 system.
 \end{itemize}
 \subsection{Administrator}
-An administrator is a employee of the ABC company being responsible of administrating the
-iCrash system. The objectives of an administrator are:
+An administrator is a employee of the ABC company being responsible of
+administrating the iCrash system. The objectives of an administrator are:
 \begin{itemize}
 \item    to add or delete coordinator actors from the system and its
  environment.
@@ -88,13 +96,13 @@ In order to achieve these objectives, the responsibilities of a coordinator are:
 \end{itemize}
 
 \subsection{Creator}
-Any system has a Creator stakeholder which is a technician who is installing the iCrash system on
-the targeted deployment infrastructure.
-The objectives of a Creator are:
+Any system has a Creator stakeholder which is a technician who is installing the
+iCrash system on the targeted deployment infrastructure. The objectives of a
+Creator are:
 \begin{itemize}
 	\item to install the iCrash system
-	\item to define the values for the initial system’s state
-	\item to define the values for the initial system’s environment
+	\item to define the values for the initial system's state
+	\item to define the values for the initial system's environment
 	\item to ensure the integration of the iCrash system with its initial
 	environment
 \end{itemize}
@@ -103,11 +111,11 @@ In order to achieve these objectives, the responsibilities of a Creator are:
 \item provide the necessary data to the iCrash system for its initialization.
 \end{itemize}
 \subsection{Activator}
-An activator is a logical representation of the active part the iCrash system. It represents an
-implicit stakeholder belonging to the system’s environment that interacts with the iCrash system
-autonomously without the need of a external entity. It is usually used for representing time triggered
-functionalities.
-The objectives of a activator are:
+An activator is a logical representation of the active part the iCrash system.
+It represents an implicit stakeholder belonging to the system's environment that
+interacts with the iCrash system autonomously without the need of a external
+entity. It is usually used for representing time triggered functionalities. The
+objectives of a activator are:
 \begin{itemize}
 \item to communicate the current time to the system
 \item to notify the administrator that some crisis are still pending for a too
@@ -122,15 +130,16 @@ In order to achieve these objectives, the responsibilities of a activator are:
 \newpage
 
 \section{System's Actors}
-The objective of this section is not to provide the full requirement elicitation document in this section
-but to reuse a part of this document to provide a informal introduction to the Messir specification
-of the system under development. The use case model is made of a use case diagrams modelling
-abstractly and informally the actors and their use cases together with a set of use cases descriptions.
-In addition, those diagrams and description tables are adapted to the Messir specification since
-actor and messages names together with parameters are partly adapted to be consistent with the
-specification identifiers.
-Among all the stakeholders presented in the previous section, we can determine five types of
-direct actors:
+The objective of this section is not to provide the full requirement elicitation
+document in this section but to reuse a part of this document to provide a
+informal introduction to the Messir specification of the system under
+development. The use case model is made of a use case diagrams modelling
+abstractly and informally the actors and their use cases together with a set of
+use cases descriptions. In addition, those diagrams and description tables are
+adapted to the Messir specification since actor and messages names together with
+parameters are partly adapted to be consistent with the specification
+identifiers. Among all the stakeholders presented in the previous section, we
+can determine five types of direct actors:
 \begin{itemize}
 	\item actComCompany: for the Communication Company stakeholder.
 	\item actAdministrator: for the Administrator stakeholder.
@@ -155,7 +164,15 @@ related to the systems ones. Those five actors are grouped into two categories:
 			\item actAuthenticated: for the logical Activator stakeholder.
 		\end{itemize}
 \end{itemize}
-The objective of this section is not to provide the full requirement elicitation document in this section but to reuse a part of this document to provide a informal introduction to the \msrmessir specification of the system under development. The use case model is made of a use case diagrams modelling abstractly and informally the actors and their use cases together with a set of use cases descriptions. 
-In addition, those diagrams and description tables are adapted to the \msrmessir specification since actor and messages names together with parameters are partly adapted to be consistent with the specification identifiers (see \cite{messirbook} for more details). 
+The objective of this section is not to provide the full requirement elicitation
+document in this section but to reuse a part of this document to provide a
+informal introduction to the \msrmessir specification of the system under
+development. The use case model is made of a use case diagrams modelling
+abstractly and informally the actors and their use cases together with a set of
+use cases descriptions.
+In addition, those diagrams and description tables are adapted to the \msrmessir
+specification since actor and messages names together with parameters are partly
+adapted to be consistent with the specification identifiers (see
+\cite{messirbook} for more details).
 
 
