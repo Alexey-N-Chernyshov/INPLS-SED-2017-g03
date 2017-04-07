@@ -5,12 +5,12 @@
 
 
 @@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState
-@description "Sample description"
+@description "used to model the system. Each system specified using \msrmessir must include a ctState class for which there is only one instance at any state of the abstract machine after creation."
 @attribute
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.vpStarted
-""
+"used to avoid reacting to an actor message if the system is not started (i.e. oeCreateSystemAndEnvironment not executed)."
 @endAttributes
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.init
-""
+"used to initialize the current object as a new instance of the ctState type."
 @endOperations

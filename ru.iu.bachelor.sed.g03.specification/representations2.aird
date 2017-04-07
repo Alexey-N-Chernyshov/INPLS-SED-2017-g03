@@ -226,23 +226,18 @@
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actComCompany.msrd</semanticResources>
-  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-asdtString.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAlertID.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtComment.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPhoneNumber.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Enumeration-etHumanKind.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctState-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actComCompany-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAlertID-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-length.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-myStringConcat.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actComCompany-outactComCompany-oeAlert.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-ugSecurelyUseSystem.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeLogin.msrd</semanticResources>

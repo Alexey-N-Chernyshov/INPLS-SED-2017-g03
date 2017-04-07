@@ -14,12 +14,7 @@ import lu.uni.lassy.messir.libraries.string
 	
 		Primary Types {
 	   
-			datatype dtString {
-				attribute value:ptString
-				operation is():ptBoolean
-				operation length():ptInteger
-				operation myStringConcat(AdtString2IN:dtString):dtString
-			}
+			
 	
 			datatype dtAlertID extends dtString {
 				operation is():ptBoolean
