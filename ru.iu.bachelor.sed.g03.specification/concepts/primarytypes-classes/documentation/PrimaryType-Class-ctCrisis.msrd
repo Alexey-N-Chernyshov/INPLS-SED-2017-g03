@@ -1,0 +1,43 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:26 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis
+@description ""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.id
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.type
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.status
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.location
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.instant
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.comment
+""
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.init
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.handlingDelayPassed
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.maxHandlingDelayPassed
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.isSentToCoordinator
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.isAllocatedIfPossible
+""
+@endOperations

@@ -1,0 +1,16 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:37 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator
+@description ""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator.id
+""
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator.init
+""
+@endOperations

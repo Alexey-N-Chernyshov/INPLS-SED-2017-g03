@@ -7,6 +7,9 @@
 @@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState
 @description "used to model the system. Each system specified using \msrmessir must include a ctState class for which there is only one instance at any state of the abstract machine after creation."
 @attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.clock
+"used to represent the system local time."
+@attribute
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.vpStarted
 "used to avoid reacting to an actor message if the system is not started (i.e. oeCreateSystemAndEnvironment not executed)."
 @endAttributes

@@ -1,0 +1,22 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:35 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated
+@description ""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.login
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.pwd
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.vpIsLogged
+""
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.init
+""
+@endOperations

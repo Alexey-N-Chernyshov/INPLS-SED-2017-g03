@@ -1,0 +1,31 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:23 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert
+@description ""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.id
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.status
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.location
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.instant
+""
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.comment
+""
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.init
+""
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAlert.isSentToCoordinator
+""
+@endOperations
