@@ -86,7 +86,7 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			actor actAdministrator[primary,active]
 		}
 		
-		use case system usergoal suGlobalCrisisHandling() {
+		use case system summary suGlobalCrisisHandling() {
 			actor actCoordinator[primary,active]
 		}
 		
@@ -109,6 +109,12 @@ import ru.iu.bachelor.sed.g03.specification.environment
 //								AdtComment:dtComment
 								) {
     		actor actComCompany[primary,active]
+		}
+		
+		use case system subfunction oeSetCrisisHandler() {
+			actor actCoordinator[primary, active]
+			actor actCoordinator[secondary, passive]
+			actor actComCompany[secondary, passive, multiple]
 		}
 	}
 }
