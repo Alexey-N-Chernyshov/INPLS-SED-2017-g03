@@ -272,7 +272,6 @@
     <semanticResources>documentation/View-oeSetCrisisHandler.msrd</semanticResources>
     <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-oeSetCrisisHandler.msrd</semanticResources>
-    <semanticResources>documentation/View-primary_class_1.msrd</semanticResources>
     <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtLogin-is.msr</semanticResources>
     <semanticResources>documentation/View-uc-sfEnterLoginPassword.msrd</semanticResources>
     <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtCoordinatorID-is.msr</semanticResources>
@@ -294,10 +293,6 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_555YYCbAEee1UejH5tTKGQ" name="ugSecurelyUseSystem" representation="_555YYSbAEee1UejH5tTKGQ">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
         <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
-      </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_zwPkYCeCEeeGSPmsB_hhDA" name="primary_class_1" representation="_zwVrACeCEeeGSPmsB_hhDA">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
-        <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid2066b3e3543343b6b186ec1f0bd2874e"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -1730,19 +1725,5 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_555YkCbAEee1UejH5tTKGQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer"/>
     <target xmi:type="messir:UseCaseSummaryOrUsergoal" href="usecases/usecases.msr#ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem"/>
-  </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_zwVrACeCEeeGSPmsB_hhDA" name="primary_class_1">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zwVrASeCEeeGSPmsB_hhDA" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_zwVrAieCEeeGSPmsB_hhDA"/>
-    </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zwv6sCeCEeeGSPmsB_hhDA" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_zwv6sSeCEeeGSPmsB_hhDA" type="Sirius" element="_zwVrACeCEeeGSPmsB_hhDA" measurementUnit="Pixel">
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_zwv6sieCEeeGSPmsB_hhDA"/>
-      </data>
-    </ownedAnnotationEntries>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_zwVrAyeCEeeGSPmsB_hhDA"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer"/>
-    <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid2066b3e3543343b6b186ec1f0bd2874e"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
