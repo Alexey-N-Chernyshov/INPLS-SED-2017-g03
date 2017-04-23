@@ -1,0 +1,21 @@
+package ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.operations.datatypes.dtCrisisID.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+		operation: ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes.dtCrisisID.is():ptBoolean{
+ 			postF {
+ 				let TheResult: ptBoolean in ( 
+ 					if (AdtValue.value.length().gt(0) and AdtValue.value.length().leq(5))
+ 					then (TheResult = true)
+ 					else (TheResult = false)
+ 					endif
+ 					result = TheResult
+ 				)
+ 			}
+		}
+	}
+}

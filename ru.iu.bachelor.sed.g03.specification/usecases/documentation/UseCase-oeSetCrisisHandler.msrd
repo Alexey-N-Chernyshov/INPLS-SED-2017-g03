@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeSetCrisisHandler
-@description ""
+@description "goal is to declare himself as been the handler of a crisis having the specified id."
 @protocolCondition
 "
 "

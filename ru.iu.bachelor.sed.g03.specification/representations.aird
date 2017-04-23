@@ -258,10 +258,6 @@
   <semanticResources>operations/environment/environment-actAuthenticated-oeLogout.msr</semanticResources>
   <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterLoginAndPassword.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterSmsCode.msrd</semanticResources>
-  <semanticResources>documentation/View-oeSollicitateCrisisHandling.msrd</semanticResources>
-  <semanticResources>documentation/View-oeSetCrisisHandler.msrd</semanticResources>
-  <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
-  <semanticResources>usecases/documentation/UseCase-oeSetCrisisHandler.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_w3x8MAJkEeeNMqg1Uehg_A">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>
