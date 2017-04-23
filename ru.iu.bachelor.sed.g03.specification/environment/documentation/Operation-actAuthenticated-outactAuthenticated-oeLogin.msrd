@@ -1,0 +1,31 @@
+@@Operation
+ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogin
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogin.AdtLogin
+""
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogin.AdtPassword
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

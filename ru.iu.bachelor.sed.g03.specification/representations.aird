@@ -229,23 +229,18 @@
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
   <semanticResources>environment/documentation/Actor-actComCompany.msrd</semanticResources>
-  <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-asdtString.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAlertID.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtComment.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtPhoneNumber.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtString.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Enumeration-etHumanKind.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctState-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actComCompany-init.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPhoneNumber-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtComment-is.msrd</semanticResources>
   <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAlertID-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
   <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-length.msrd</semanticResources>
-  <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtString-myStringConcat.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actComCompany-outactComCompany-oeAlert.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-ugSecurelyUseSystem.msrd</semanticResources>
   <semanticResources>usecases/documentation/UseCase-oeLogin.msrd</semanticResources>
@@ -258,6 +253,47 @@
   <semanticResources>operations/environment/environment-actAuthenticated-oeLogout.msr</semanticResources>
   <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterLoginAndPassword.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeEnterSmsCode.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctAlert.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAlert-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAlert-isSentToCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctCrisis.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisis-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisis-handlingDelayPassed.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisis-maxHandlingDelayPassed.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisis-isSentToCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCrisis-isAllocatedIfPossible.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctHuman.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctHuman-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctHuman-isAcknowledged.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctAuthenticated.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAuthenticated-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctCoordinator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctCoordinator-init.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctAdministrator.msrd</semanticResources>
+  <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAdministrator-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeLogin.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-oeLogout.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actMsrCreator-outactMsrCreator-oeCreateSystemAndEnvironment.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeInvalidateAlert.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeCloseCrisis.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeGetAlertsSet.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeGetCrisisSet.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeSetCrisisHandler.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeReportOnCrisis.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeSetCrisisStatus.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeSetCrisisType.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actCoordinator-outactCoordinator-oeValidateAlert.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAdministrator-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeAddCoordinator.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actAdministrator-outactAdministrator-oeDeleteCoordinator.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actActivator-init.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actActivator-outactActivator-oeSollicitateCrisisHandling.msrd</semanticResources>
+  <semanticResources>environment/documentation/Operation-actActivator-outactActivator-oeSetClock.msrd</semanticResources>
+  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctState-init.msr</semanticResources>
+  <semanticResources>documentation/View-suDeployAndRun3.msrd</semanticResources>
+  <semanticResources>documentation/View-suDeployAndRun.msrd</semanticResources>
+  <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_w3x8MAJkEeeNMqg1Uehg_A">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

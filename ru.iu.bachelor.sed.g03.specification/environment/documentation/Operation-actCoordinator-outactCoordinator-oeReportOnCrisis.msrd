@@ -1,0 +1,37 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:50 MSK 2017
+*/
+
+
+@@Operation
+ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeReportOnCrisis
+//parameters
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeReportOnCrisis.AdtCrisisID
+""
+@parameter
+ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeReportOnCrisis.AdtComment
+""
+@endParameters
+
+@description "
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

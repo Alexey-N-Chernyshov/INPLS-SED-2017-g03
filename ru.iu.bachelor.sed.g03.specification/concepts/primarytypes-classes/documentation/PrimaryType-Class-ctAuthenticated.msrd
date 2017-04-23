@@ -1,0 +1,22 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:35 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated
+@description "used to model system’s representation about actors that need to authenticate to access some specific functionalities."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.login
+"an identifier for authentication."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.pwd
+"a key for authentication."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.vpIsLogged
+"used to determine the access status."
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAuthenticated.init
+"used to initialize the current object as a new instance of the ctAuthenticated type."
+@endOperations

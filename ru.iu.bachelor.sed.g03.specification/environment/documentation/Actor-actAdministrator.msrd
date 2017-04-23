@@ -5,7 +5,7 @@
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actAdministrator
-@description ""
+@description "represents an actor responsible of administration tasks for the \msrprojectname system."
 //input events
 
 //output events

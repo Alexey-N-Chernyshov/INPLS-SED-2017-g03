@@ -9,9 +9,10 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
+
 import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
 import ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes
-
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes
 
 
 Environment Model {
@@ -21,13 +22,22 @@ Environment Model {
 			operation init():ptBoolean
 
 			input interface inactComCompany {
-				operation ieSmsSend(AdtPhoneNumber: dtPhoneNumber, AdtSMS: dtSms): ptBoolean
+				operation ieSmsSend(
+					AdtPhoneNumber: dtPhoneNumber,
+					AdtSMS: dtSms
+				): ptBoolean
 			}
 
 			output interface outactComCompany {
-				operation oeAlert(AetHumanKind: etHumanKind, AdtPhoneNumber: dtPhoneNumber, AdtComment: dtComment): ptBoolean
+				operation oeAlert(
+					AetHumanKind: etHumanKind,
+					AdtDate: dtDate,
+					AdtTime: dtTime,
+					AdtPhoneNumber: dtPhoneNumber,
+					AdtGPSLocation: dtGPSLocation,
+					AdtComment: dtComment
+				): ptBoolean
 			}
-
 		}
 
 		abstract actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
@@ -35,35 +45,89 @@ Environment Model {
 			input interface inactAuthenticated {
 				operation ieValidateSmsCode(): ptBoolean
 				operation ieLoginPasswordCorrect(): ptBoolean
+				operation ieMessage(AMessage: ptString): ptBoolean
 			}
 
 			output interface outactAuthenticated {
 				operation oeEnterLoginAndPassword(): ptBoolean
 				operation oeEnterSmsCode(): ptBoolean
+				operation oeLogin(
+					AdtLogin: dtLogin,
+					AdtPassword: dtPassword
+				): ptBoolean
+				operation oeLogout(): ptBoolean
 			}
 		}
+
 		actor actMsrCreator role rnactMsrCreator cardinality[1 .. 1] {
+
 			input interface inactMsrCreator {
+
 			}
+
 			output interface outactMsrCreator {
+				operation oeCreateSystemAndEnvironment(AqtyComCompanies:ptInteger):ptBoolean
 			}
 		}
-		actor actCoordinator role rnactCoordinator cardinality[0 .. *] {
+
+		actor actCoordinator role rnactCoordinator cardinality[0 .. *]
+				extends actAuthenticated {
+					
+			operation init():ptBoolean
+
 			input interface inactCoordinator {
+				operation ieSendAnAlert(ActAlert: ctAlert): ptBoolean
+				operation ieSendACrisis(ActCrisis: ctCrisis): ptBoolean
 			}
+
 			output interface outactCoordinator {
+				operation oeInvalidateAlert(AdtAlertID: dtAlertID): ptBoolean
+				operation oeCloseCrisis(AdtCrisisID: dtCrisisID): ptBoolean
+				operation oeGetAlertsSet(AetAlertStatus: etAlertStatus): ptBoolean
+				operation oeGetCrisisSet(AetCrisisStatus: etCrisisStatus): ptBoolean
+				operation oeSetCrisisHandler(AdtCrisisID: dtCrisisID): ptBoolean
+				operation oeReportOnCrisis(AdtCrisisID: dtCrisisID,
+										   AdtComment: dtComment): ptBoolean
+				operation oeSetCrisisStatus(
+					AdtCrisisID: dtCrisisID,
+         			AetCrisisStatus: etCrisisStatus
+				): ptBoolean
+				operation oeSetCrisisType(
+                   AdtCrisisID: dtCrisisID,
+                   AetCrisisType: etCrisisType
+                ): ptBoolean
+				operation oeValidateAlert(AdtAlertID: dtAlertID): ptBoolean
 			}
 		}
-		actor actAdministrator role rnactAdministrator cardinality[1 .. *] {
+
+		actor actAdministrator role rnactAdministrator cardinality[1 .. 1]
+				extends actAuthenticated {
+				
+			operation init():ptBoolean
+
 			input interface inactAdministrator {
+				operation ieCoordinatorAdded():ptBoolean
+				operation ieCoordinatorDeleted():ptBoolean
 			}
+
 			output interface outactAdministrator {
+				operation oeAddCoordinator(AdtCoordinatorID:dtCoordinatorID,
+					AdtLogin:dtLogin, AdtPassword:dtPassword):ptBoolean
+				operation oeDeleteCoordinator(AdtCoordinatorID:dtCoordinatorID):ptBoolean
 			}
 		}
+
 		actor actActivator role rnactActivator cardinality[0 .. *] {
+			
+			operation init():ptBoolean
+			
 			input interface inactActivator {
+
 			}
+
 			output interface outactActivator {
+				proactive operation oeSollicitateCrisisHandling(): ptBoolean
+				proactive operation oeSetClock(AcurrentClock:dtDateAndTime ): ptBoolean
 			}
 		}
 }
