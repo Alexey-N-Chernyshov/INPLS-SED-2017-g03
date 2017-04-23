@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Sun Apr 23 16:21:59 MSK 2017
+*/
+
+
+@@view suDeployAndRun3
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.suDeployAndRun
+@description ""
+@caption ""
