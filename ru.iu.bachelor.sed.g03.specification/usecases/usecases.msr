@@ -144,5 +144,11 @@ import ru.iu.bachelor.sed.g03.specification.environment
 								) {
     		actor actComCompany[primary,active]
 		}
+
+		use case system subfunction oeSetCrisisHandler() {
+			actor actCoordinator[primary, active]
+			actor actCoordinator[secondary, passive]
+			actor actComCompany[secondary, passive, multiple]
+		}
 	}
 }

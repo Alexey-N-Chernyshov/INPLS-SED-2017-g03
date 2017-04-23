@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Sun Apr 23 15:20:47 MSK 2017
+*/
+
+
+@@view ugSecurelyUseSystem
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem
+@description ""
+@caption ""

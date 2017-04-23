@@ -1,0 +1,24 @@
+/*
+@author Yex
+@date Sat Apr 22 18:03:04 MSK 2017
+*/
+
+
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeSetCrisisHandler
+@description "goal is to declare himself as been the handler of a crisis having the specified id."
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

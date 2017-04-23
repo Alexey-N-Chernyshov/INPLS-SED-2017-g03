@@ -275,7 +275,6 @@
     <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etHumanKind-is.msrd</semanticResources>
     <semanticResources>concepts/secondarytypes-datatypes/documentation/SecondaryType-Datatype-dtSms.msrd</semanticResources>
     <semanticResources>concepts/secondarytypes-datatypes/documentation/Operation-dtSms-is.msrd</semanticResources>
-    <semanticResources>documentation/View-suDeployAndRun3.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-ctAlert.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAlert-init.msrd</semanticResources>
     <semanticResources>concepts/primarytypes-classes/documentation/Operation-ctAlert-isSentToCoordinator.msrd</semanticResources>
