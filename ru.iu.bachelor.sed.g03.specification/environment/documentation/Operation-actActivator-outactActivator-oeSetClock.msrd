@@ -10,6 +10,8 @@ ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oe
 @parameter
 ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oeSetClock.AcurrentClock
 ""
+@parameter ru.iu.bachelor.sed.g03.specification.environment.operations.actActivator.outactActivator.oeSetClock.operationmodel.ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oeSetClock.AcurrentClock
+" "
 @endParameters
 
 @description "

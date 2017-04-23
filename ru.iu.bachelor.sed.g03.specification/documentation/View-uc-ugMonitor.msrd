@@ -1,0 +1,11 @@
+/*
+@author ali-d
+@date Sat Apr 22 20:37:48 MSK 2017
+*/
+
+
+@@view uc-ugMonitor
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugMonitor 
+@description "the actCoordinator's goal is to get the detailed list of existing crisis or alerts to decide on next actions
+to undertake."
+@caption "ugMonitor user goal use case"

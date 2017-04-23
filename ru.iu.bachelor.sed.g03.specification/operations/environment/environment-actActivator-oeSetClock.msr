@@ -1,0 +1,41 @@
+package ru.iu.bachelor.sed.g03.specification.environment.operations.actActivator.outactActivator.oeSetClock {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes
+
+	Operation Model {
+
+		operation: ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oeSetClock(AcurrentClock:dtDateAndTime):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+			/* Pre Protocol:*/
+			preP{
+				let TheSystem: ctState in
+				let AvpStarted: ptBoolean in
+			
+				/* PreP01 */
+				self.rnActor.rnSystem = TheSystem
+				and self.rnActor.rnSystem.vpStarted = AvpStarted
+				and AvpStarted = true
+				and TheSystem.clock.lt(AcurrentClock)
+			}
+			
+			/* Pre Functional:*/
+			preF{true}
+			
+			/* Post Functional:*/
+			postF{
+				let TheSystem: ctState in
+				self.rnActor.rnSystem = TheSystem
+			
+			/* PostF01 */
+				and TheSystem@post.clock = AcurrentClock}
+			
+			/* Post Protocol:*/
+			postP{ true}
+			}
+		}
+	}
+

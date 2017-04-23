@@ -1,0 +1,72 @@
+package ru.iu.bachelor.sed.g03.specification.environment.operations.actAuthenticated.oeLogin {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes
+import ru.iu.bachelor.sed.g03.specification.environment
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogin(AdtLogin:dtLogin, AdtPassword:dtPassword):ptBoolean{
+/* Pre Protocol:*/
+preP{let TheSystem: ctState in
+let TheActor:actAuthenticated in
+self.rnActor.rnSystem = TheSystem
+and self.rnActor = TheActor
+
+/* PreP01 */
+and TheSystem.vpStarted = true
+/* PreP02 */
+and TheActor.rnctAuthenticated.vpIsLogged = false}
+
+/* Pre Functional:*/
+preF{/* PreF01 */
+true}
+
+/* Post Functional:*/
+postF{let TheSystem: ctState in
+let TheactAuthenticated:actAuthenticated in
+
+let AptStringMessageForTheactAuthenticated: ptString in
+let AptStringMessageForTheactAdministrator:ptString in
+
+self.rnActor.rnSystem = TheSystem
+and self.rnActor = TheactAuthenticated
+
+and /* PostF01 */
+if (TheactAuthenticated.rnctAuthenticated.pwd
+= AdtPassword
+and TheactAuthenticated.rnctAuthenticated.login
+= AdtLogin
+)
+then (AptStringMessageForTheactAuthenticated.eq('You are logged ! Welcome ...')
+and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+)
+else (AptStringMessageForTheactAuthenticated
+.eq('Wrong identification information ! Please try again ...')
+and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+and AptStringMessageForTheactAdministrator.eq('Intrusion tentative !')
+and TheSystem.rnactAdministrator
+.rnInterfaceIN^ieMessage(AptStringMessageForTheactAdministrator)
+)
+endif}
+
+/* Post Protocol:*/
+postP{ let TheSystem: ctState in
+let TheactAuthenticated:actAuthenticated in
+
+self.rnActor.rnSystem = TheSystem
+and self.rnActor = TheactAuthenticated
+/* PostP01 */
+if (TheactAuthenticated.rnctAuthenticated.pwd = AdtPassword
+and TheactAuthenticated.rnctAuthenticated.login = AdtLogin
+)
+then (TheactAuthenticated.rnctAuthenticated@post.vpIsLogged = true)
+else true
+endif}
+		}
+	}
+}

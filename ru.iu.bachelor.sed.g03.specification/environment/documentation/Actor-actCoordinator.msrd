@@ -10,3 +10,30 @@
 
 //output events
 
+@operation ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.init
+" "
+@endOperations
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.inactCoordinator.ieSendAnAlert
+" "
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.inactCoordinator.ieSendACrisis
+" "
+@endInputEvents
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeInvalidateAlert
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeCloseCrisis
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeGetAlertsSet
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeGetCrisisSet
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeSetCrisisHandler
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeReportOnCrisis
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeSetCrisisStatus
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeSetCrisisType
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actCoordinator.outactCoordinator.oeValidateAlert
+" "
+@endOutputEvents

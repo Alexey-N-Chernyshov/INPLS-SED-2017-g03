@@ -1,0 +1,24 @@
+/*
+@author ali-d
+@date Sun Apr 23 14:13:53 MSK 2017
+*/
+
+
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeGetCrisisSet
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

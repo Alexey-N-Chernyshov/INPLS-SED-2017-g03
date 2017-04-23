@@ -10,6 +10,17 @@
 @inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.inactAuthenticated.ieLoginPasswordCorrect
 ""
 
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.inactAuthenticated.ieValidateSmsCode
+" "
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.inactAuthenticated.ieMessage
+" "
 @endInputEvents
-//output events
-
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeEnterLoginAndPassword
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeEnterSmsCode
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogin
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAuthenticated.outactAuthenticated.oeLogout
+" "
+@endOutputEvents

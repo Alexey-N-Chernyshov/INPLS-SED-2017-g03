@@ -1,0 +1,29 @@
+package ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.operations.classes.ctAdministrator.init {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAdministrator.init(Alogin:dtLogin, Apwd:dtPassword):ptBoolean{
+ postF{if
+ (
+ let Self:ctAdministrator in
+ /* Post F01 */
+ Self.login(Alogin)
+and Self.pwd = Apwd
+and Self.vpIsLogged = false
+
+ /* Post F02 */
+ and (Self.oclIsNew and self = Self)
+ )
+ then (result = true)
+ else (result = false)
+ endif}
+		}
+	}
+}

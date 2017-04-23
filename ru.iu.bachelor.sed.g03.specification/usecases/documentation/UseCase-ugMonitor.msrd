@@ -1,0 +1,24 @@
+/*
+@author ali-d
+@date Sun Apr 23 14:13:52 MSK 2017
+*/
+
+
+@@Use Case ru.iu.bachelor.sed.g03.specification.usecases.ugMonitor
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

@@ -1,0 +1,24 @@
+/*
+@author ali-d
+@date Sat Apr 22 19:26:34 MSK 2017
+*/
+
+
+@@Use Case ru.iu.bachelor.sed.g03.specification.usecases.ugManageCrisis
+@description ""
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

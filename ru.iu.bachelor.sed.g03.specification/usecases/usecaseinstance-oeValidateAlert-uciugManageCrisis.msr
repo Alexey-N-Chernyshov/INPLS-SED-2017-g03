@@ -1,0 +1,8 @@
+package usecases.uciugManageCrisis {
+	import ru.iu.bachelor.sed.g03.specification.usecases
+
+	Use Case Model {
+
+		
+	}
+}

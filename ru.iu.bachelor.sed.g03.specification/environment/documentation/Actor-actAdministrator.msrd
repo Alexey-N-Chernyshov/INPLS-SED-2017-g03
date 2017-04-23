@@ -10,3 +10,16 @@
 
 //output events
 
+@operation ru.iu.bachelor.sed.g03.specification.environment.actAdministrator.init
+" "
+@endOperations
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAdministrator.inactAdministrator.ieCoordinatorAdded
+" "
+@inputEvent ru.iu.bachelor.sed.g03.specification.environment.actAdministrator.inactAdministrator.ieCoordinatorDeleted
+" "
+@endInputEvents
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAdministrator.outactAdministrator.oeAddCoordinator
+" "
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actAdministrator.outactAdministrator.oeDeleteCoordinator
+" "
+@endOutputEvents

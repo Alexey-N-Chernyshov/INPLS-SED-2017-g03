@@ -67,7 +67,7 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			step b: actAdministrator executes ugAdministrateTheSystem
 			step c: actComCompany executes oeAlert
 			step d: actActivator executes oeSetClock
-			step ^e: actActivator executes oeSollicitateCrisisHandling
+			step e: actActivator executes oeSollicitateCrisisHandling
 			step f: actCoordinator executes suGlobalCrisisHandling
 			
 			ordering constraint 
@@ -109,6 +109,57 @@ import ru.iu.bachelor.sed.g03.specification.environment
 //								AdtComment:dtComment
 								) {
     		actor actComCompany[primary,active]
+		}
+	use case system usergoal ugManageCrisis() {
+		actor actCoordinator[primary, active]
+		
+		reuse oeValidateAlert[0..*]
+		reuse oeSetCrisisStatus[0..*]
+		reuse oeSetCrisisHandler[0..*]
+		reuse oeReportOnCrisis[0..*]
+		reuse oeCloseCrisis[0..*]
+		reuse oeInvalidateAlert[0..*]
+		
+		step a: actCoordinator executes oeValidateAlert
+		step b: actCoordinator executes oeSetCrisisStatus 
+		step c: actCoordinator executes oeSetCrisisHandler
+		step d: actCoordinator executes oeReportOnCrisis
+		step e: actCoordinator executes oeCloseCrisis
+		step f: actCoordinator executes oeInvalidateAlert
+		}
+	use case system subfunction oeValidateAlert() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeSetCrisisStatus() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeSetCrisisHandler() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeReportOnCrisis() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeCloseCrisis() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeInvalidateAlert() {
+			actor actCoordinator[primary, active]
+		}
+		
+	use case system usergoal ugMonitor() {
+		actor actCoordinator[primary, active]
+		
+		reuse oeGetCrisisSet[0..*]
+		reuse oeGetAlertsSet[0..*]
+		
+		step a: actCoordinator executes oeGetAlertsSet
+		step b: actCoordinator executes oeGetCrisisSet
+		}
+	use case system subfunction oeGetCrisisSet() {
+			actor actCoordinator[primary, active]
+		}
+	use case system subfunction oeGetAlertsSet() {
+			actor actCoordinator[primary, active]
 		}
 	}
 }

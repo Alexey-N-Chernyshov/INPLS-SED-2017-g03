@@ -1,0 +1,10 @@
+/*
+@author ali-d
+@date Sat Apr 22 18:27:08 MSK 2017
+*/
+
+
+@@view uc-ugManageCrisis
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugManageCrisis 
+@description "The goal is to do an action that makes the handling of a crisis or an alert progress."
+@caption "ugManageCrisis user goal use case"

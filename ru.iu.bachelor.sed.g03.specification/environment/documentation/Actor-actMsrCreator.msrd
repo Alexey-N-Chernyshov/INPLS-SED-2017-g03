@@ -10,3 +10,6 @@
 
 //output events
 
+@outputEvent ru.iu.bachelor.sed.g03.specification.environment.actMsrCreator.outactMsrCreator.oeCreateSystemAndEnvironment
+" "
+@endOutputEvents

@@ -12,6 +12,16 @@ ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.clock
 @attribute
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.vpStarted
 "used to avoid reacting to an actor message if the system is not started (i.e. oeCreateSystemAndEnvironment not executed)."
+@attribute ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.nextValueForAlertID
+" "
+@attribute ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.nextValueForCrisisID
+" "
+@attribute ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.crisisReminderPeriod
+" "
+@attribute ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.maxCrisisReminderPeriod
+" "
+@attribute ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.vpLastReminder
+" "
 @endAttributes
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctState.init
