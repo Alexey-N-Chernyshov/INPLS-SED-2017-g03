@@ -1,0 +1,43 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:26 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis
+@description "Used to model crisis that are inferred from the reception of at least one alert message. Crisis are entities that are handled by the \msrprojectname system."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.id
+"the crisis unique identification information."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.type
+"an indication of the gravity of the crisis."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.status
+"the crisis handling status."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.location
+"the position of the crisis equal by the one of the first alert received and associated to the crisis."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.instant
+"the date and time at which the first related alert notification has been sent."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.comment
+"a textual description providing unstructured information on the crisis handling."
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.init
+"used to initialize the current object as a new instance of the ctAlert type."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.handlingDelayPassed
+"used to determine if the crisis stood too longly in a pending status since last reminder."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.maxHandlingDelayPassed
+"used to determine if the crisis stood too longly in a pending status since its creation."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.isSentToCoordinator
+"used to provide a given coordinator with current crisis information."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCrisis.isAllocatedIfPossible
+"used to allocate a crisis to a coordinator if any or to alert the administrator of crisis waiting to be handled."
+@endOperations

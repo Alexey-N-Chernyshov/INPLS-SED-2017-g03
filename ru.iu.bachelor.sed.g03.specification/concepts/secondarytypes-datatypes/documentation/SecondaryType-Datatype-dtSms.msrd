@@ -5,12 +5,12 @@
 
 
 @@Secondary Type Datatype ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms
-@description ""
+@description "a datatype made of a string value used to send textual information to human mobile devices."
 @attribute
 ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms.value
-""
+"the textual information."
 @endAttributes
 @operation
 ru.iu.bachelor.sed.g03.specification.concepts.secondarytypes.datatypes.dtSms.is
-""
+"used to determine which strings are considered as valid comments."
 @endOperations

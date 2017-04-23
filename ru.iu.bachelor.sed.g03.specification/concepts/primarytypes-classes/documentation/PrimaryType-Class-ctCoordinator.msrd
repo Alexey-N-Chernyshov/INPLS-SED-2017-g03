@@ -1,0 +1,16 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:37 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator
+@description "used to model system’s representation about the actors that have the responsibility to handle alerts and crisis."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator.id
+"a unique identification information."
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctCoordinator.init
+"used to initialize the current object as a new instance of the ctCoordinator type."
+@endOperations

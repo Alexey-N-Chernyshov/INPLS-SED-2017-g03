@@ -7,3 +7,5 @@ StandardLibrariesProjectName=lu.uni.lassy.excalibur.standard.specification.libra
 ViewerViewsFontSize=8
 eclipse.preferences.version=1
 enableProjectSpecificMsrLicenseFolding=false
+msrCommentsFolding=false
+msrLicenseFolding=false

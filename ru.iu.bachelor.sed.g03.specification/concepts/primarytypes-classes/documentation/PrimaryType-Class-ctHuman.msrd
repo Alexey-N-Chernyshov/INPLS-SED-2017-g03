@@ -1,0 +1,22 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:32 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctHuman
+@description "used to model system’s representation about the indirect actors that has alerted of potential crisis."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctHuman.id
+"the number of the communication device used to send an alert to \msrprojectname system."
+@attribute
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctHuman.kind
+"role with respect to the alert notified."
+@endAttributes
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctHuman.init
+"used to initialize the current object as a new instance of the ctHuman type."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctHuman.isAcknowledged
+"used to determine is the human is acknowledge."
+@endOperations

@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Sat Apr 08 02:29:39 MSK 2017
+*/
+
+
+@@Primary Type Class ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAdministrator
+@description "used to characterize internally the entity that is responsible for administration of the \msrprojectname system."
+@operation
+ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.classes.ctAdministrator.init
+"used to initialize the current object as a new instance of the ctAdministrator type."
+@endOperations
