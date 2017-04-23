@@ -5,7 +5,7 @@
 
 
 @@Use Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem
-@description "the actAdministrator’s goal is to follow an identification procedure to be allowed to add or delete the
+@description "the actAdministrator's goal is to follow an identification procedure to be allowed to add or delete the
 necessary crisis coordinators that will be granted the responsibility to handle alerts and crisis."
 @protocolCondition
 "

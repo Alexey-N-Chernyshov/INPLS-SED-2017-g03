@@ -5,12 +5,12 @@
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actActivator
-@description "represents a logical actor for time automatic message sending based on system’s or environment status."
+@description "represents a logical actor for time automatic message sending based on system's or environment status."
 //input events
 
 //output events
 @outputEvent ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oeSollicitateCrisisHandling
 "used to avoid crisis to stay too long in an not handled status."
 @outputEvent ru.iu.bachelor.sed.g03.specification.environment.actActivator.outactActivator.oeSetClock
-"used to update the system’s time"
+"used to update the system's time"
 @endOutputEvents

@@ -6,5 +6,5 @@
 
 @@view oeSollicitateCrisisHandling
 @model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.oeSollicitateCrisisHandling 
-@description "the actActivator’s goal is to decrease the number of unhandled crisis."
-@caption "shows the use case diagram for the oeSollicitateCrisisHandling subfunction use cas"
+@description "the actActivator's goal is to decrease the number of unhandled crisis."
+@caption "shows the use case diagram for the oeSollicitateCrisisHandling subfunction use case"
