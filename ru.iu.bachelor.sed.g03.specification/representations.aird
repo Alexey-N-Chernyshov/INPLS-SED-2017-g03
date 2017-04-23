@@ -290,6 +290,10 @@
   <semanticResources>environment/documentation/Operation-actActivator-init.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actActivator-outactActivator-oeSollicitateCrisisHandling.msrd</semanticResources>
   <semanticResources>environment/documentation/Operation-actActivator-outactActivator-oeSetClock.msrd</semanticResources>
+  <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-ctState-init.msr</semanticResources>
+  <semanticResources>documentation/View-suDeployAndRun3.msrd</semanticResources>
+  <semanticResources>documentation/View-suDeployAndRun.msrd</semanticResources>
+  <semanticResources>documentation/View-ugSecurelyUseSystem.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_w3x8MAJkEeeNMqg1Uehg_A">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>
