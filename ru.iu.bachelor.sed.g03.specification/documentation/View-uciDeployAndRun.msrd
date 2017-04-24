@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 13:03:53 MSK 2017
+*/
+
+
+@@view uciDeployAndRun
+@instance Use-Case usecases.uci.uciDeployAndRunPart1 
+@description "uci-suDeployAndRun-uciDeployAndRunPart01"
+@caption "uci-suDeployAndRun-uciSimpleAndCompletePart01"

@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 15:06:42 MSK 2017
+*/
+
+
+@@view ugGetPOI
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugGetPOI 
+@description "ugGetPOI user goal use case"
+@caption "ugGetPOI user goal use case"

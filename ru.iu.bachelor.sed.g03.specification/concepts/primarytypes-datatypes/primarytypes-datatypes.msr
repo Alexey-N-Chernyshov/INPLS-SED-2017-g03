@@ -13,9 +13,6 @@ import lu.uni.lassy.messir.libraries.string
 	Concept Model {
 	
 		Primary Types {
-	   
-			
-	
 			datatype dtAlertID extends dtString {
 				operation is():ptBoolean
 			}

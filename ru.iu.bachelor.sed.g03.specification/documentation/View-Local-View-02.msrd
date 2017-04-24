@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Apr 24 15:47:46 MSK 2017
+*/
+
+
+@@view Local-View-02
+@model Environment 
+@level Local
+@number 2
+@description "Environment Model - Local View 02."
+@caption "Environment Model - Local View 02. environment model local view - Part 2."

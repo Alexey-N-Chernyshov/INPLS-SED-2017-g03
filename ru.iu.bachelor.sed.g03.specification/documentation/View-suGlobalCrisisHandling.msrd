@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 10:38:32 MSK 2017
+*/
+
+
+@@view suGlobalCrisisHandling
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.suGlobalCrisisHandling 
+@description "suGlobalCrisisHandling summary level use case"
+@caption "suGlobalCrisisHandling summary level use case"

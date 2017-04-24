@@ -1,10 +1,10 @@
 /*
-@author Yex
-@date Mon Mar 27 18:22:48 MSK 2017
+@author dsalxv
+@date Mon Apr 24 15:13:53 MSK 2017
 */
 
 
-@@Use Case ru.iu.bachelor.sed.g03.specification.usecases.suGlobalCrisisHandling
+@@Use Case Subfunction ru.iu.bachelor.sed.g03.specification.usecases.oeVictimRequest
 @description ""
 @protocolCondition
 "
@@ -19,4 +19,6 @@
 "
 @endPostConditions
 @additionalInformation
-"none"
+"
+none
+"

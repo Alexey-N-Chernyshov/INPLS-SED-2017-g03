@@ -6,5 +6,5 @@
 
 @@view ugSecurelyUseSystem
 @model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugSecurelyUseSystem
-@description ""
-@caption ""
+@description "ugSecurelyUseSystem user goal use case"
+@caption "ugSecurelyUseSystem user goal use case"

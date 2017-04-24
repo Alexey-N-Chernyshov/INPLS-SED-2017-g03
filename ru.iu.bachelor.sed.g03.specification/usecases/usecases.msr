@@ -9,6 +9,7 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
+import ru.iu.bachelor.sed.g03.specification.concepts.primarytypes.datatypes
 import ru.iu.bachelor.sed.g03.specification.environment
 
 
@@ -26,6 +27,8 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			step a: actAuthenticated executes sfEnterLoginPassword
 			step b: actComCompany executes sfSMSValidate
 			step c: actAuthenticated executes sfSMSValidate
+
+			ordering constraint "step (a) must always precede step (b)."
 		}
 		
 		use case system subfunction sfEnterLoginPassword() {
@@ -47,6 +50,62 @@ import ru.iu.bachelor.sed.g03.specification.environment
 		
 		use case system subfunction oeLogout() {
 			actor actAuthenticated[primary, active]
+		}
+		
+		use case system subfunction oeGetCrisisSet() {
+			actor actCoordinator[primary, active]
+		}
+
+		use case system subfunction oeGetAlertsSet() {
+			actor actCoordinator[primary, active]
+		}
+
+		use case system subfunction oeAddCoordinator() {
+			actor actAdministrator[primary, active]
+		}
+
+		use case system subfunction oeDeleteCoordinator() {
+			actor actAdministrator[primary, active]
+		}
+
+		use case system subfunction oeValidateAlert() {
+			actor actCoordinator[primary, active]
+		}
+
+		use case system subfunction oeSetCrisisStatus() {
+			actor actCoordinator[primary, active]
+		}
+		
+		use case system subfunction oeReportOnCrisis() {
+			actor actCoordinator[primary, active]
+		}
+		
+		use case system subfunction oeCloseCrisis() {
+			actor actCoordinator[primary, active]
+		}
+
+		use case system subfunction oeInvalidateAlert() {
+			actor actCoordinator[primary, active]
+		}
+
+		use case system usergoal ugManageCrisis() {
+			actor actCoordinator[primary, active]
+			
+			reuse oeValidateAlert[0..*]
+			reuse oeSetCrisisStatus[0..*]
+			reuse oeSetCrisisHandler[0..*]
+			reuse oeReportOnCrisis[0..*]
+			reuse oeCloseCrisis[0..*]
+			reuse oeInvalidateAlert[0..*]
+			
+			step a: actCoordinator executes oeValidateAlert
+			step b: actCoordinator executes oeSetCrisisStatus
+			step c: actCoordinator executes oeSetCrisisHandler
+			step d: actCoordinator executes oeReportOnCrisis
+			step f: actCoordinator executes oeCloseCrisis
+			step g: actCoordinator executes oeInvalidateAlert
+			
+			ordering constraint "managing a crisis is doing one of the indicated use cases."
 		}
 
 		use case system summary suDeployAndRun() {
@@ -85,43 +144,44 @@ import ru.iu.bachelor.sed.g03.specification.environment
 		use case system usergoal ugAdministrateTheSystem() {
 			actor actAdministrator[primary,active]
 			
-// 			reuse ugSecurelyUseSystem[1..*]
-// 			reuse oeAddCoordinator[1..*]
-// 			reuse oeDeleteCoordinator[0..*]
-// 			
-// 			step a: actAdministrator
-// 			executes ugSecurelyUseSystem
-// 			step b: actAdministrator
-// 			executes oeAddCoordinator
-// 			step c: actAdministrator
-// 			executes oeDeleteCoordinator
-// 			
-// 			ordering constraint
-// 			"steps (a) (b) and (c) executions are interleaved
-// 			(steps (b) and (c) have their protocol constrained
-// 			by steps of (a))."
-// 			ordering constraint
-// 			"steps (a) (b) and (c) can be executed multiple times."
+			reuse ugSecurelyUseSystem[1..*]
+			reuse oeAddCoordinator[1..*]
+			reuse oeDeleteCoordinator[0..*]
+			
+			step a: actAdministrator
+			executes ugSecurelyUseSystem
+			step b: actAdministrator
+			executes oeAddCoordinator
+			step c: actAdministrator
+			executes oeDeleteCoordinator
+			
+			ordering constraint
+			"steps (a) (b) and (c) executions are interleaved
+			(steps (b) and (c) have their protocol constrained
+			by steps of (a))."
+			ordering constraint
+			"steps (a) (b) and (c) can be executed multiple times."
 		}
 		
 		use case system summary suGlobalCrisisHandling() {
 			actor actCoordinator[primary,active]
 			
-// 			reuse ugSecurelyUseSystem[1..*]
-// 			reuse ugMonitor[1..*]
-// 			reuse ugManageCrisis[1..*]
+			reuse ugSecurelyUseSystem[1..*]
+			reuse ugMonitor[1..*]
+			reuse ugManageCrisis[1..*]
 
-// 			step a: actCoordinator
-// 				executes ugSecurelyUseSystem
-// 			step b: actCoordinator
-// 				executes ugMonitor
-// 			step c: actCoordinator
-// 				executes ugManageCrisis
-// 			ordering constraint
-// 				"steps (a) (b) and (c) executions are interleaved
-// 				(steps (b) and (c) have their protocol constrained by steps of (a))."
-// 			   ordering constraint
-// 				"steps (a) (b) and (c) can be executed multiple times."
+			step a: actCoordinator
+				executes ugSecurelyUseSystem
+			step b: actCoordinator
+				executes ugMonitor
+			step c: actCoordinator
+				executes ugManageCrisis
+
+			ordering constraint
+				"steps (a) (b) and (c) executions are interleaved
+				(steps (b) and (c) have their protocol constrained by steps of (a))."
+			   ordering constraint
+				"steps (a) (b) and (c) can be executed multiple times."
 		}
 		
 		use case system subfunction oeSetClock(AcurrentClock:dtDateAndTime) {
@@ -134,14 +194,9 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			actor actAdministrator[secondary,passive]
     	}
 
-		use case system subfunction oeAlert(
-//								AetKind:etHumanKind,
-								AdtMyDate:dtDate,
-								AdtTime:dtTime//,
-//								AdtPhoneNumber:dtPhoneNumber,
-//								AdtGPSLocation:dtGPSLocation,
-//								AdtComment:dtComment
-								) {
+		use case system subfunction oeAlert(AetKind: etHumanKind, AdtMyDate:dtDate, AdtTime:dtTime,
+											AdtPhoneNumber:dtPhoneNumber, AdtGPSLocation:dtGPSLocation,
+											AdtComment:dtComment) {
     		actor actComCompany[primary,active]
 		}
 
@@ -149,6 +204,42 @@ import ru.iu.bachelor.sed.g03.specification.environment
 			actor actCoordinator[primary, active]
 			actor actCoordinator[secondary, passive]
 			actor actComCompany[secondary, passive, multiple]
+		}
+
+		use case system usergoal ugMonitor() {
+			actor actCoordinator[primary,active]
+			
+			reuse oeGetCrisisSet[0..*]
+			reuse oeGetAlertsSet[0..*]
+			
+			step a: actCoordinator executes oeGetAlertsSet
+			step b: actCoordinator executes oeGetCrisisSet
+		}
+
+		use case system usergoal ugGetPOI() {
+			actor actCoordinator[primary, reactive]
+			actor actComCompany[secondary, reactive, multiple]
+
+			reuse oeBuildMap[1..1]
+			reuse oeVictimRequest[1..*]
+			
+			step a: actComCompany
+				executes oeVictimRequest
+			step b: actCoordinator
+				executes oeBuildMap
+				
+			ordering constraint
+				"step (a) can be executed multiple times,"
+			ordering constraint
+				"step (a) must be executed before (b)."
+		}
+		
+		use case system subfunction oeBuildMap() {
+			actor actCoordinator[primary, active]
+		}
+		
+		use case system subfunction oeVictimRequest() {
+			actor actComCompany[primary, active]
 		}
 	}
 }

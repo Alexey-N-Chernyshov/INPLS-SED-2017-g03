@@ -6,5 +6,5 @@
 
 @@view suDeployAndRun
 @model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.suDeployAndRun
-@description "whatever"
-@caption ""
+@description "shows the use case diagram for the suDeployAndRun summary use case"
+@caption "suDeployAndRun summary use case"

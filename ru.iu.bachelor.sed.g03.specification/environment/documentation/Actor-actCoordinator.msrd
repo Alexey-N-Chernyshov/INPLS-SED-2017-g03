@@ -5,7 +5,7 @@
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actCoordinator
-@description ""
+@description "Coordinator of \msrprojectname"
 //input events
 
 //output events

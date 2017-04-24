@@ -5,7 +5,7 @@
 
 
 @@Actor ru.iu.bachelor.sed.g03.specification.environment.actMsrCreator
-@description ""
+@description "Creator of /msrprojectname"
 //input events
 
 //output events

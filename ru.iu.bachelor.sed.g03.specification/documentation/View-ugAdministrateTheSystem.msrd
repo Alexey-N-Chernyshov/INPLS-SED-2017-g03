@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 11:49:41 MSK 2017
+*/
+
+
+@@view ugAdministrateTheSystem
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugAdministrateTheSystem 
+@description "ugAdministrateTheSystem user goal use case"
+@caption "ugAdministrateTheSystem user goal use case"

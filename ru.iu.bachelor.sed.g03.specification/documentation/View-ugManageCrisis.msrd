@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 11:53:20 MSK 2017
+*/
+
+
+@@view ugManageCrisis
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugManageCrisis 
+@description "ugManageCrisis user goal use case"
+@caption "ugManageCrisis user goal use case"

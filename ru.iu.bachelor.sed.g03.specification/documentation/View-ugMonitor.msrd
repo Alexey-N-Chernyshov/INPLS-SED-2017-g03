@@ -1,0 +1,10 @@
+/*
+@author dsalxv
+@date Mon Apr 24 12:03:15 MSK 2017
+*/
+
+
+@@view ugMonitor
+@model Use-Case ru.iu.bachelor.sed.g03.specification.usecases.ugMonitor 
+@description "ugMonitor user goal use case"
+@caption "ugMonitor user goal use case"
