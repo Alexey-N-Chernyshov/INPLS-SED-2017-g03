@@ -1,0 +1,13 @@
+/*
+@author dsalxv
+@date Mon Apr 24 18:53:12 MSK 2017
+*/
+
+
+@@view SecondaryDatatypes-Local-View-01
+@model Concept 
+@level Local
+@sublevel Secondary Datatype
+@number 12
+@description "shows the local view of the secondary types datatype types."
+@caption "Local view of the secondary types datatype types"

@@ -9,4 +9,4 @@
 @level Local
 @number 5
 @description "shows the local view for the authenticated actor and interfaces."
-@caption "Environment Model - Local View 05. authenticated actor environment model view."
+@caption "authenticated actor environment model view."

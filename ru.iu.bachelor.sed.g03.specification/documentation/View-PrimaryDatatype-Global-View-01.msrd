@@ -1,0 +1,13 @@
+/*
+@author dsalxv
+@date Mon Apr 24 18:25:49 MSK 2017
+*/
+
+
+@@view PrimaryDatatype-Global-View-01
+@model Concept 
+@level Global
+@sublevel Primary Class
+@number 11
+@description "shows a global view on the \msrprojectname primary types datatype types."
+@caption "global view of primary types datatype types"

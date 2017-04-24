@@ -9,4 +9,4 @@
 @level Local
 @number 1
 @description "shows the local view giving the second part of the environment model of the system in term of its state class, actors with their input and output interfaces and all related associations."
-@caption "local view of the \msrprojectname system"
+@caption "environment model local view - Part 1."

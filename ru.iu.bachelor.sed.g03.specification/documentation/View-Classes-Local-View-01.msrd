@@ -1,0 +1,13 @@
+/*
+@author dsalxv
+@date Mon Apr 24 17:45:04 MSK 2017
+*/
+
+
+@@view Classes-Local-View-01
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 6
+@description "shows the local view on all the primary types class types."
+@caption "Local view of all the primary types class types"

@@ -1,0 +1,13 @@
+/*
+@author dsalxv
+@date Mon Apr 24 17:56:28 MSK 2017
+*/
+
+
+@@view Classes-Local-View-02
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 7
+@description "shows the local view of the ctState primary type class type."
+@caption "local view of the ctState primary type"

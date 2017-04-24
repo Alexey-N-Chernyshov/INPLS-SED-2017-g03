@@ -1,0 +1,13 @@
+/*
+@author dsalxv
+@date Mon Apr 24 18:01:05 MSK 2017
+*/
+
+
+@@view Classes-Local-View-04
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 9
+@description "shows the local view of the ctCrisis primary type class type."
+@caption "local view of the ctCrisis primary type"

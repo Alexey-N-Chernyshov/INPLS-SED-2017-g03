@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Apr 24 18:22:23 MSK 2017
+*/
+
+@@view PrimaryDatatypes-Local-View-01
+@model Concept 
+@level Local
+@sublevel Primary Datatype
+@number 10
+@description "represents GPS location datatype."
+@caption "GPS location datatype view"

@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Apr 24 17:58:47 MSK 2017
+*/
+
+@@view Classes-Local-View-03
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 8
+@description "shows the local view of the ctAlert primary type class type."
+@caption "local view of the ctAlert primary type"
