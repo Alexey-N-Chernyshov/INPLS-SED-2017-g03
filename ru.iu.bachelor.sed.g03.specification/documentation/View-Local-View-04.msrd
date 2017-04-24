@@ -1,0 +1,12 @@
+/*
+@author dsalxv
+@date Mon Apr 24 16:51:10 MSK 2017
+*/
+
+
+@@view Local-View-04
+@model Environment 
+@level Local
+@number 4
+@description "shows the local view for the coordinator actor and interfaces."
+@caption "Environment Model - Local View 04. coordinator actor environment model view."

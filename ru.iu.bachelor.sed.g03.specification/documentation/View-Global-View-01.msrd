@@ -1,0 +1,11 @@
+/*
+@author dsalxv
+@date Mon Apr 24 17:03:47 MSK 2017
+*/
+
+@@view Global-View-01
+@model Environment 
+@level Local
+@number 6
+@description "shows the system state and relations between it and actors."
+@caption "Environment Model - Global View 01. em-gv-01 environment model global view."
